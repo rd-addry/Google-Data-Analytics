@@ -1,12 +1,31 @@
-# Google Data Analytics Professional Certificate
+# Plans and Milestones
 
-## Learn Path
+## Data Analytics
+- SQL
+- PostgresSQL
+- R
+- Python
+- NumPy
+  
+## Data Science
+- Python
+- Statistics
 
--  **C1-Foundations: Data, Data, Everywhere**
--  **C2-Ask Questions to Make Data-Driven Decisions**
--  **C3-Prepare Data for Exploration**
--  **C4-Process Data from Dirty to Clean**
--  **C5-Analyze Data to Answer Questions**
--  **C6-Share Data Through the Art of Visualization**
--  **C7-Data Analysis with R Programming**
--  **C8-Google Data Analytics Capstone: Complete a Case Study**
+## Web Design
+- HTML
+- CSS
+
+## Data Visualization
+- D3
+- Tableu
+- Power BI
+
+## Output
+- Website (try with GitHub Pages)
+- Capstone Project (showcased on website)
+
+
+## Coursera
+- **Google Data Analytics Professional Certificate**
+- **Google Advanced Data Analytics Professional Certificate**
+- **IBM Data Science Professional Certificate**
