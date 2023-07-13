@@ -1,0 +1,1798 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Oblique;}
+{\colortbl;\red255\green255\blue255;\red24\green26\blue30;\red21\green20\blue38;\red242\green244\blue245;
+\red0\green0\blue0;\red109\green109\blue109;\red255\green255\blue254;\red251\green0\blue7;\red42\green42\blue42;
+\red107\green0\blue1;\red0\green0\blue255;\red21\green20\blue38;\red242\green244\blue245;\red9\green60\blue148;
+\red19\green118\blue70;\red15\green112\blue1;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c13725\c15686;\cssrgb\c10588\c10588\c19608;\cssrgb\c96078\c96471\c96863;
+\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;\cssrgb\c100000\c100000\c99608;\cssrgb\c100000\c0\c0;\cssrgb\c21961\c21961\c21961;
+\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c10588\c10588\c19608;\cssrgb\c96078\c96471\c96863;\cssrgb\c1569\c31765\c64706;
+\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c50196\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww7640\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ## \cf2 \expnd0\expndtw0\kerning0
+Learn Intermediate CSS by Building a Picasso Painting\cf0 \kerning1\expnd0\expndtw0 \
+Completion Date : 3 Jul 2023\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ## Step 1\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Start by setting up your HTML structure. Add a\'a0\cf5 \cb1 <!DOCTYPE>\cf3 \cb4 \'a0declaration and an\'a0\cf5 \cb1 html\cf3 \cb4 \'a0element with a\'a0\cf5 \cb1 lang\cf3 \cb4 \'a0attribute set to\'a0\cf5 \cb1 en\cf3 \cb4 . Within the\'a0\cf5 \cb1 html\cf3 \cb4 \'a0element, add a\'a0\cf5 \cb1 head\cf3 \cb4 \'a0element and a\'a0\cf5 \cb1 body\cf3 \cb4 \'a0element.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf6 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 <!DOCTYPE\cf8 \strokec8  html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf9 \cb7 \strokec9 <\cf10 \strokec10 html\cf5 \strokec5  \cf8 \strokec8 lang\cf9 \strokec9 =\cf11 \strokec11 "en"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7   \cf9 \strokec9 <\cf10 \strokec10 head\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 body\cf9 \strokec9 ></\cf10 \strokec10 body\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7   \cf9 \strokec9 </\cf10 \strokec10 head\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cf9 \cb7 \strokec9 </\cf10 \strokec10 html\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 2\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Within your\'a0\cf5 \cb1 \strokec5 head\cf12 \cb13 \strokec12 \'a0element, add a\'a0\cf5 \cb1 \strokec5 meta\cf12 \cb13 \strokec12 \'a0tag with the\'a0\cf5 \cb1 \strokec5 charset\cf12 \cb13 \strokec12 \'a0attribute set to\'a0\cf5 \cb1 \strokec5 utf-8\cf12 \cb13 \strokec12 . Also add a\'a0\cf5 \cb1 \strokec5 title\cf12 \cb13 \strokec12 \'a0element with the text\'a0\cf5 \cb1 \strokec5 Picasso Painting\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5     \cf9 \strokec9 <\cf10 \strokec10 meta\cf5 \strokec5  \cf8 \strokec8 charset\cf9 \strokec9 =\cf11 \strokec11 "UTF-8"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 title\cf9 \strokec9 >\cf5 \strokec5 Picasso Painting\cf9 \strokec9 </\cf10 \strokec10 title\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 3\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Go ahead and link your CSS file now, even though you have not written any CSS yet.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 Add a\'a0link\'a0element with a\'a0rel\'a0of\'a0stylesheet\'a0and an\'a0href\'a0of\'a0styles.css.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5     \cf9 \strokec9 <\cf10 \strokec10 link\cf5 \strokec5  \cf8 \strokec8 rel\cf9 \strokec9 =\cf11 \strokec11 "stylesheet"\cf5 \strokec5  \cf8 \strokec8 href\cf9 \strokec9 =\cf11 \strokec11 "styles.css"\cf5 \strokec5  \cf9 \strokec9 />\cf5 \cb1 \strokec5 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 4\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 FontAwesome is a library of SVG-powered icons, many of which are freely available to use. You will be using some of these icons in this project, so you will need to link the external stylesheet to your HTML.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 Add a\'a0link\'a0element with a\'a0rel\'a0of\'a0stylesheet\'a0and an\'a0href\'a0of\'a0https://use.fontawesome.com/releases/v5.8.2/css/all.css.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5     \cf9 \strokec9 <\cf10 \strokec10 link\cf5 \strokec5  \cf8 \strokec8 rel\cf9 \strokec9 =\cf11 \strokec11 "stylesheet"\cf5 \strokec5  \cf8 \strokec8 href\cf9 \strokec9 =\cf11 \strokec11 "https://use.fontawesome.com/releases/v5.8.2/css/all.css"\cf5 \strokec5  \cf9 \strokec9 />\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 5\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 To get your painting started, give your\'a0\cf5 \cb1 \strokec5 body\cf12 \cb13 \strokec12 \'a0element a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 rgb(184, 132, 46)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 body\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 184\cf5 \strokec5 , \cf15 \strokec15 132\cf5 \strokec5 , \cf15 \strokec15 46\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 6\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Within your body tag, add a\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0element. Give it an\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 back-wall\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf9 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "back-wall"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 7\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use an id selector to give the element with the id\'a0\cf5 \cb1 \strokec5 back-wall\cf12 \cb13 \strokec12 \'a0a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 #8B4513\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #back-wall\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #8B4513\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 8\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #back-wall\cf12 \cb13 \strokec12 \'a0element a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 100%\cf12 \cb13 \strokec12 \'a0and a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 60%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 100%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 60%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 9\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Typically, HTML is rendered in a top-down manner. Elements at the top of the code are positioned at the top of the page. However, many times you may want to move the elements to different positions. You can do this with the\'a0position\'a0property.\
+Set the\'a0position\'a0property for the\'a0#back-wall\'a0element to\'a0absolute. An\'a0absolute\'a0position takes the element out of that top-down document flow and allows you to adjust it relative to its container.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 When an element is manually positioned, you can shift its layout with\'a0top,\'a0left,\'a0right, and\'a0bottom. Set the\'a0#back-wall\'a0element to have a\'a0top\'a0value of\'a00, and a\'a0left\'a0value of\'a00.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 10\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 The\'a0z-index\'a0property is used to create "layers" for your HTML elements. If you are familiar with image editing tools, you may have worked with layers before. This is a similar concept.\
+Elements with a higher\'a0z-index\'a0value will appear to be layered on top of elements with a lower\'a0z-index\'a0value. This can be combined with the positioning in the previous lesson to create unique effects.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 Since the\'a0back-wall\'a0element will need to appear "behind" the other elements you will be creating, give the\'a0back-wall\'a0element a\'a0z-index\'a0of\'a0-1.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 -1\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 11\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Below your\'a0\cf5 \cb1 \strokec5 #back-wall\cf12 \cb13 \strokec12 \'a0element, create a\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0with a\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 characters\cf12 \cb13 \strokec12 . This is where you will be creating your painting's characters.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "characters"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 12\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Inside that\'a0\cf5 \cb1 \strokec5 .characters\cf12 \cb13 \strokec12 \'a0element, create another\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0with an\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 offwhite-character\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "offwhite-character"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 13\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Create four\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements inside your\'a0\cf5 \cb1 \strokec5 offwhite-character\cf12 \cb13 \strokec12 \'a0element. Give those\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements the following\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0values, in order:\'a0\cf5 \cb1 \strokec5 white-hat\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 black-mask\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 gray-instrument\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 tan-table\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "white-hat"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-mask"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "gray-instrument"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "tan-table"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 14\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 This character needs eyes. Create two\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements in the\'a0\cf5 \cb1 \strokec5 #black-mask\cf12 \cb13 \strokec12 \'a0element. Give them the classes\'a0\cf5 \cb1 \strokec5 eyes left\cf12 \cb13 \strokec12 \'a0and\'a0\cf5 \cb1 \strokec5 eyes right\cf12 \cb13 \strokec12 , in that order.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 15\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Create some "dots" for the instrument. Add five\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements within your\'a0\cf5 \cb1 \strokec5 #gray-instrument\cf12 \cb13 \strokec12 \'a0element. Set the\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0of each to\'a0\cf5 \cb1 \strokec5 black-dot\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 16\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Using an id selector, create a rule for the element with the id\'a0\cf5 \cb1 \strokec5 offwhite-character\cf12 \cb13 \strokec12 . Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 300px\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 550px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 GhostWhite\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #offwhite-character\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 550px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 GhostWhite\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 17\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Move the\'a0\cf5 \cb1 \strokec5 #offwhite-character\cf12 \cb13 \strokec12 \'a0into place by giving it a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 20%\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 17.5%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 20%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 17.5%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 18\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Using an id selector, style the element with the id\'a0\cf5 \cb1 \strokec5 white-hat\cf12 \cb13 \strokec12 . Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0and\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 border-style\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 solid\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #white-hat\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-style:\cf5 \strokec5  \cf14 \strokec14 solid\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 19\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 That does not look quite right. Set a\'a0\cf5 \cb1 \strokec5 border-width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 0 120px 140px 180px\cf12 \cb13 \strokec12 \'a0to size the hat properly.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 120px\cf5 \strokec5  \cf15 \strokec15 140px\cf5 \strokec5  \cf15 \strokec15 180px\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 20\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now you have a large box. Give it a\'a0\cf5 \cb1 \strokec5 border-top-color\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 border-right-color\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 border-left-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 transparent\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 border-bottom-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 GhostWhite\cf12 \cb13 \strokec12 . This will make it look more like a hat.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 border-top-color:\cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-right-color:\cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-left-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-bottom-color:\cf5 \strokec5  \cf14 \strokec14 GhostWhite\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 21\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the hat a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 -140px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -140px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 22\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Using an id selector, create a rule for the element with the id\'a0\cf5 \cb1 \strokec5 black-mask\cf12 \cb13 \strokec12 . Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 100%\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 50px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 rgb(45, 31, 19)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #black-mask\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 100%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 50px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 23\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the mask a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0and\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 24\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 To ensure you can see the mask, give it a\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 1\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 25\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Using an id selector, give the element with the id\'a0\cf5 \cb1 \strokec5 gray-instrument\cf12 \cb13 \strokec12 \'a0a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 15%\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 40%\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 rgb(167, 162, 117)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #gray-instrument\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 15%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 167\cf5 \strokec5 , \cf15 \strokec15 162\cf5 \strokec5 , \cf15 \strokec15 117\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 26\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now move it into place with a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 50px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 125px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 50px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 125px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 27\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Set the\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 1\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5  \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 28\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use a class selector to create a rule for the elements with\'a0\cf5 \cb1 \strokec5 black-dot\cf12 \cb13 \strokec12 \'a0class. Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 10px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 10px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 rgb(45, 31, 19)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .black-dot\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 10px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 10px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 29\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 These dots are just a little too square. Give the\'a0\cf5 \cb1 \strokec5 black-dot\cf12 \cb13 \strokec12 \'a0class a\'a0\cf5 \cb1 \strokec5 border-radius\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 50%\cf12 \cb13 \strokec12 \'a0to fix it.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 30\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Move the dots into place by setting the\'a0\cf5 \cb1 \strokec5 display\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 block\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 margin\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 auto\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 margin-top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 65%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 block\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin:\cf5 \strokec5  \cf14 \strokec14 auto\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-top:\cf5 \strokec5  \cf15 \strokec15 65%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 31\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use an id selector to style the element with the id\'a0\cf5 \cb1 \strokec5 tan-table\cf12 \cb13 \strokec12 . Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 450px\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 140px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 #D2691E\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #tan-table\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 450px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 140px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #D2691E\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 32\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Move the table into place by giving it a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 275px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 15px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 275\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 15px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 33\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the table a\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 1\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 34\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 After your\'a0\cf5 \cb1 \strokec5 div#offwhite-character\cf12 \cb13 \strokec12 \'a0element, add a\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0with the\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 black-character\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5      \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-character"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \strokec5  \cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 35\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Within your new\'a0\cf5 \cb1 \strokec5 #black-character\cf12 \cb13 \strokec12 \'a0element, add three\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements with the following\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0values, in order:\'a0\cf5 \cb1 \strokec5 black-hat\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 gray-mask\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 white-paper\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5      \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-hat"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \strokec5  \cb1 \
+\cb7      \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "gray-mask"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \strokec5  \cb1 \
+\cb7      \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "white-paper"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \strokec5  \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 36\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 The mask needs eyes. Within your\'a0\cf5 \cb1 \strokec5 #gray-mask\cf12 \cb13 \strokec12 \'a0element, add two\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements. The first should have the\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 eyes left\cf12 \cb13 \strokec12 , and the second should have the\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 eyes right\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \strokec5   \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 37\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 The\'a0i\'a0element is used for idiomatic text, or text that is separate from the "normal" text content. This could be for\'a0
+\f1\i italic
+\f0\i0 \'a0text, such as scientific terms, or for icons like those provided by FontAwesome.\
+Within your\'a0#white-paper\'a0element, add four\'a0i\'a0elements. Give them all a\'a0class\'a0value of\'a0fas fa-music.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 This special class is how FontAwesome determines which icon to load.\'a0fas\'a0indicates the category of icons (FontAwesome Solid, here), while\'a0fa-music\'a0selects the specific ico\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 38\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use an id selector to create a rule for the element with the id\'a0\cf5 \cb1 \strokec5 black-character\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 300px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 500px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 rgb(45, 31, 19)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #black-character\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 500px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 39\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Move the\'a0\cf5 \cb1 \strokec5 #black-character\cf12 \cb13 \strokec12 \'a0element into place by setting the\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 30%\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 59%\cf12 \cb13 \strokec12 .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 30%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 59%\cf5 \strokec5 ; \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 40\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use an id selector to create a rule for the element with the id\'a0\cf5 \cb1 \strokec5 black-hat\cf12 \cb13 \strokec12 . Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 border-style\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 solid\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #black-hat\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-style:\cf5 \strokec5  \cf14 \strokec14 solid\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 41\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Set the\'a0\cf5 \cb1 \strokec5 border-width\cf12 \cb13 \strokec12 \'a0of the\'a0\cf5 \cb1 \strokec5 #black-hat\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 150px 0 0 300px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 42\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Just like with your\'a0\cf5 \cb1 \strokec5 #white-hat\cf12 \cb13 \strokec12 , you should style the border for the\'a0\cf5 \cb1 \strokec5 #black-hat\cf12 \cb13 \strokec12 \'a0element. Give it a\'a0\cf5 \cb1 \strokec5 border-top-color\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 border-right-color\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 border-bottom-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 transparent\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 border-left-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 rgb(45, 31, 19)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-top-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-right-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-bottom-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-left-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 43\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now position the\'a0\cf5 \cb1 \strokec5 #black-hat\cf12 \cb13 \strokec12 \'a0element. Give it a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , with a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 -150px\cf12 \cb13 \strokec12 \'a0and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 44\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Using an id selector, style the element with the id\'a0\cf5 \cb1 \strokec5 gray-mask\cf12 \cb13 \strokec12 . Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 150px\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 150px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 rgb(167, 162, 117)\cf12 \cb13 \strokec12 .\
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #gray-mask\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 167\cf5 \strokec5 , \cf15 \strokec15 162\cf5 \strokec5 , \cf15 \strokec15 117\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 45\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Position the\'a0\cf5 \cb1 \strokec5 #gray-mask\cf12 \cb13 \strokec12 \'a0element by setting\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 -10px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 70px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -10px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 70px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 46\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Using an id selector, create a rule for the id\'a0\cf5 \cb1 \strokec5 white-paper\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 400px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 100px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 GhostWhite\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #white-paper\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 400px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 100px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 GhostWhite\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 47\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #white-paper\cf12 \cb13 \strokec12 \'a0a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 250px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 -150px\cf12 \cb13 \strokec12 \'a0to move it into place.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 250px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 -150px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 48\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Set the\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of the\'a0\cf5 \cb1 \strokec5 #white-paper\cf12 \cb13 \strokec12 \'a0element to\'a0\cf5 \cb1 \strokec5 1\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf8 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 49\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 FontAwesome icons come with their own styling to define the icon. However, you can still set the styling yourself as well, to change things like the color and size. For now, use a class selector to target the icons with the class\'a0\cf5 \cb1 \strokec5 fa-music\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 display\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 inline-block\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 margin-top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 8%\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 margin-left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 13%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .fa-music\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 inline-block\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-top:\cf5 \strokec5  \cf15 \strokec15 8%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-left:\cf5 \strokec5  \cf15 \strokec15 13%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 50\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Below your\'a0\cf5 \cb1 \strokec5 #black-character\cf12 \cb13 \strokec12 \'a0element, add two new\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements. These will be the shawl. Give both of them a\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 blue\cf12 \cb13 \strokec12 . Then give the first one an\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 blue-left\cf12 \cb13 \strokec12 , and the second an\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 blue-right\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "blue"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "blue-left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "blue"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "blue-right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 51\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use a class selector to target the new elements with the class\'a0\cf5 \cb1 \strokec5 blue\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 #1E90FF\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .blue\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #1E90FF\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 52\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Select the element with the id\'a0\cf5 \cb1 \strokec5 blue-left\cf12 \cb13 \strokec12 \'a0using an id selector. Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 500px\cf12 \cb13 \strokec12 \'a0and a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 300px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #blue-left\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 500px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 53\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now set the\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 20%\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 20%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 20%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 20%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 54\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Next, target the element with the id\'a0\cf5 \cb1 \strokec5 blue-right\cf12 \cb13 \strokec12 \'a0using an id selector. Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 400px\cf12 \cb13 \strokec12 \'a0and the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 300px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #blue-right\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 400px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 55\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #blue-right\cf12 \cb13 \strokec12 \'a0element the correct positioning with\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 50%\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 40%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 56\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Below your\'a0\cf5 \cb1 \strokec5 .blue\cf12 \cb13 \strokec12 \'a0elements, add another\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 . Give it the\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 orange-character\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf9 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "orange-character"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \strokec5       \cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 57\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Within that\'a0\cf5 \cb1 \strokec5 #orange-character\cf12 \cb13 \strokec12 \'a0element, add four\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements. Give them the\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0values of\'a0\cf5 \cb1 \strokec5 black-round-hat\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 eyes-div\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 triangles\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 guitar\cf12 \cb13 \strokec12 , in order.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-round-hat"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "eyes-div"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "triangles"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 58\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 The\'a0\cf5 \cb1 \strokec5 #eyes-div\cf12 \cb13 \strokec12 \'a0element should hold some eyes. Add two\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements inside. Give the first a\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 eyes left\cf12 \cb13 \strokec12 , and give the second a\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 eyes right\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 59\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Within the\'a0\cf5 \cb1 \strokec5 #triangles\cf12 \cb13 \strokec12 \'a0div, you will need to add the elements that will become your triangles. Create thirty\'a0\cf5 \cb1 \strokec5 div\cf12 \cb13 \strokec12 \'a0elements and give each of them the class\'a0\cf5 \cb1 \strokec5 triangle\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5          \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 60\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 Within the\'a0#guitar\'a0element, create three\'a0div\'a0elements. Give the first two a\'a0class\'a0value of\'a0guitar. Then give the first an\'a0id\'a0of\'a0guitar-left, and the second an\'a0id\'a0of\'a0guitar-right. Add an\'a0id\'a0to the third\'a0div\'a0with the value\'a0guitar-neck.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 The third\'a0div\'a0should not have the\'a0guitar\'a0class.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-neck"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 61\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use another FontAwesome icon for your\'a0\cf5 \cb1 \strokec5 .guitar\cf12 \cb13 \strokec12 . Inside both the\'a0\cf5 \cb1 \strokec5 #guitar-left\cf12 \cb13 \strokec12 \'a0and\'a0\cf5 \cb1 \strokec5 #guitar-right\cf12 \cb13 \strokec12 \'a0elements, add an\'a0\cf5 \cb1 \strokec5 i\cf12 \cb13 \strokec12 \'a0element and give it a\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 fas fa-bars\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-left"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-bars"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-right"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-bars"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 62\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Select your\'a0\cf5 \cb1 \strokec5 orange-character\cf12 \cb13 \strokec12 \'a0element with an id selector. Give it a\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 250px\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 550px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 rgb(240, 78, 42)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #orange-character\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 250px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 550px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 240\cf5 \strokec5 , \cf15 \strokec15 78\cf5 \strokec5 , \cf15 \strokec15 42\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 63\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #orange-character\cf12 \cb13 \strokec12 \'a0element a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 25%\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 40%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 25%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 64\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Style the element with the id\'a0\cf5 \cb1 \strokec5 black-round-hat\cf12 \cb13 \strokec12 \'a0using an id selector. Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 180px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 150px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 rgb(45, 31, 19)\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #black-round-hat\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 180px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 65\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 The\'a0\cf5 \cb1 \strokec5 #black-round-hat\cf12 \cb13 \strokec12 \'a0element should probably be round. Give it a\'a0\cf5 \cb1 \strokec5 border-radius\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 50%\cf12 \cb13 \strokec12 \'a0to fix this.\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5  \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 66\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Move the\'a0\cf5 \cb1 \strokec5 #black-round-hat\cf12 \cb13 \strokec12 \'a0element into place with a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 -100px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 5px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -100px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 5px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 67\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Put the\'a0\cf5 \cb1 \strokec5 #black-round-hat\cf12 \cb13 \strokec12 \'a0element on the correct layer with a\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 -1\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 -1\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 68\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use an id selector to create a rule for the element with the id\'a0\cf5 \cb1 \strokec5 eyes-div\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 180px\cf12 \cb13 \strokec12 \'a0and the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 50px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #eyes-div\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 180px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 50px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 69\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now move the\'a0\cf5 \cb1 \strokec5 #eyes-div\cf12 \cb13 \strokec12 \'a0element into position with\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 -40px\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0set to\'a0\cf5 \cb1 \strokec5 20px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -40px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 20px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 70\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #eyes-div\cf12 \cb13 \strokec12 \'a0element a\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 3\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf8 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 3\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 71\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Target the element with the id\'a0\cf5 \cb1 \strokec5 triangles\cf12 \cb13 \strokec12 \'a0using an id selector. Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 250px\cf12 \cb13 \strokec12 \'a0and the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 550px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #triangles\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 250px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 550px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 72\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Create a class selector for the elements with the\'a0\cf5 \cb1 \strokec5 triangle\cf12 \cb13 \strokec12 \'a0class. Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 \'a0and the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 0\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .triangle\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \}\
+```\
+\
+## Step 73\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Style the border of your\'a0\cf5 \cb1 \strokec5 .triangle\cf12 \cb13 \strokec12 \'a0elements. Set the\'a0\cf5 \cb1 \strokec5 border-style\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 solid\cf12 \cb13 \strokec12 \'a0and the\'a0\cf5 \cb1 \strokec5 border-width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 42px 45px 45px 0\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 border-style:\cf5 \strokec5  \cf14 \strokec14 solid\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 42px\cf5 \strokec5  \cf15 \strokec15 45px\cf5 \strokec5  \cf15 \strokec15 45px\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 74\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give your\'a0\cf5 \cb1 \strokec5 .triangle\cf12 \cb13 \strokec12 \'a0elements the correct color. Set the\'a0\cf5 \cb1 \strokec5 border-top-color\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 border-bottom-color\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 border-left-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 transparent\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 border-right-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 Gold\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf8 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec8 border-top-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-right-color:\cf5 \strokec5  \cf14 \strokec14 Gold\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-bottom-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-left-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 75\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Adjust the layout of the\'a0\cf5 \cb1 \strokec5 .triangle\cf12 \cb13 \strokec12 \'a0elements with a\'a0\cf5 \cb1 \strokec5 display\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 inline-block\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 inline-block\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 76\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now use an id selector for\'a0\cf5 \cb1 \strokec5 guitar\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 100%\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 100px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #guitar\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 100%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 100px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 77\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 In the same\'a0\cf5 \cb1 \strokec5 #guitar\cf12 \cb13 \strokec12 \'a0selector, set the\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 120px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 0px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 120px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 78\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #guitar\cf12 \cb13 \strokec12 \'a0rule a\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 3\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 3\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 79\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now use a class selector to target\'a0\cf5 \cb1 \strokec5 guitar\cf12 \cb13 \strokec12 . This will style the two "halves" of your guitar. Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 150px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 120px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 Goldenrod\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 border-radius\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 50%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .guitar\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 120px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 Goldenrod\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 80\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Select the\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0with value\'a0\cf5 \cb1 \strokec5 guitar-left\cf12 \cb13 \strokec12 , and set the\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 \'a0and the\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 0px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #guitar-left\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 81\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Select the\'a0\cf5 \cb1 \strokec5 id\cf12 \cb13 \strokec12 \'a0with value\'a0\cf5 \cb1 \strokec5 guitar-right\cf12 \cb13 \strokec12 , and also set\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 . This time, set\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 100px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #guitar-right\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 100px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 82\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now you need to move the bar icons into place. Create a class selector for the\'a0\cf5 \cb1 \strokec5 fa-bars\cf12 \cb13 \strokec12 \'a0class. Set the\'a0\cf5 \cb1 \strokec5 display\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 block\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 margin-top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 30%\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 margin-left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 40%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .fa-bars\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 block\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-top:\cf5 \strokec5  \cf15 \strokec15 30%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-left:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 83\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Use an id selector to create a rule for the id\'a0\cf5 \cb1 \strokec5 guitar-neck\cf12 \cb13 \strokec12 . Set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 200px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 30px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 #D2691E\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 #guitar-neck\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 200px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #D2691E\cf5 \strokec5 ;\cb1 \
+\
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 84\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Now move the\'a0\cf5 \cb1 \strokec5 #guitar-neck\cf12 \cb13 \strokec12 \'a0element with a\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , a\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 45px\cf12 \cb13 \strokec12 , and a\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0value of\'a0\cf5 \cb1 \strokec5 200px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 45px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 200px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 85\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Give the\'a0\cf5 \cb1 \strokec5 #guitar-neck\cf12 \cb13 \strokec12 \'a0element a\'a0\cf5 \cb1 \strokec5 z-index\cf12 \cb13 \strokec12 \'a0of\'a0\cf5 \cb1 \strokec5 3\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf5 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 3\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 86\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Time to style the elements with the\'a0\cf5 \cb1 \strokec5 eyes\cf12 \cb13 \strokec12 \'a0class. Use a class selector to set the\'a0\cf5 \cb1 \strokec5 width\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 35px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 height\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 20px\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 background-color\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 #8B4513\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 border-radius\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 20px 50%\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .eyes\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 35px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 20px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #8B4513\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 20px\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 87\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 Target the\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0with value\'a0\cf5 \cb1 \strokec5 right\cf12 \cb13 \strokec12 \'a0and set the\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 ,\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 15px\cf12 \cb13 \strokec12 , and\'a0\cf5 \cb1 \strokec5 right\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 30px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .right\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 15px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 right:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 88\
+\pard\pardeftab720\partightenfactor0
+\cf12 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec12 For the\'a0\cf5 \cb1 \strokec5 class\cf12 \cb13 \strokec12 \'a0with value\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 , create the selector and set the\'a0\cf5 \cb1 \strokec5 position\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 absolute\cf12 \cb13 \strokec12 , the\'a0\cf5 \cb1 \strokec5 top\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 15px\cf12 \cb13 \strokec12 , and the\'a0\cf5 \cb1 \strokec5 left\cf12 \cb13 \strokec12 \'a0to\'a0\cf5 \cb1 \strokec5 30px\cf12 \cb13 \strokec12 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .left\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 15px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+## Step 89\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf5 \cb13 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 One last step. The FontAwesome icons are a little too small. Target all of them with a class selector for\'a0fas, and set the\'a0font-size\'a0to\'a030px.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 With that, your Picasso painting is complete!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 .fas\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 font-size:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+##FINAL INDEX.HTML\
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf6 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 <!DOCTYPE\cf8 \strokec8  html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf9 \cb7 \strokec9 <\cf10 \strokec10 html\cf5 \strokec5  \cf8 \strokec8 lang\cf9 \strokec9 =\cf11 \strokec11 "en"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7   \cf9 \strokec9 <\cf10 \strokec10 head\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 meta\cf5 \strokec5  \cf8 \strokec8 charset\cf9 \strokec9 =\cf11 \strokec11 "utf-8"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 title\cf9 \strokec9 >\cf5 \strokec5 Picasso Painting\cf9 \strokec9 </\cf10 \strokec10 title\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 link\cf5 \strokec5  \cf8 \strokec8 rel\cf9 \strokec9 =\cf11 \strokec11 "stylesheet"\cf5 \strokec5  \cf8 \strokec8 href\cf9 \strokec9 =\cf11 \strokec11 "./styles.css"\cf5 \strokec5  \cf9 \strokec9 />\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 link\cf5 \strokec5  \cf8 \strokec8 rel\cf9 \strokec9 =\cf11 \strokec11 "stylesheet"\cf5 \strokec5  \cf8 \strokec8 href\cf9 \strokec9 =\cf11 \strokec11 "https://use.fontawesome.com/releases/v5.8.2/css/all.css"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7   \cf9 \strokec9 </\cf10 \strokec10 head\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7   \cf9 \strokec9 <\cf10 \strokec10 body\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "back-wall"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "characters"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "offwhite-character"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "white-hat"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-mask"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "gray-instrument"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "black-dot"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "tan-table"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-character"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-hat"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "gray-mask"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "white-paper"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-music"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "blue"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "blue-left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "blue"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "blue-right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "orange-character"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "black-round-hat"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "eyes-div"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes left"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "eyes right"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "triangles"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "triangle"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-left"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7             \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-bars"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "guitar"\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-right"\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7             \cf9 \strokec9 <\cf10 \strokec10 i\cf5 \strokec5  \cf8 \strokec8 class\cf9 \strokec9 =\cf11 \strokec11 "fas fa-bars"\cf9 \strokec9 ></\cf10 \strokec10 i\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7           \cf9 \strokec9 <\cf10 \strokec10 div\cf5 \strokec5  \cf8 \strokec8 id\cf9 \strokec9 =\cf11 \strokec11 "guitar-neck"\cf9 \strokec9 ></\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7         \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7       \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7     \cf9 \strokec9 </\cf10 \strokec10 div\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cb7   \cf9 \strokec9 </\cf10 \strokec10 body\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\cf9 \cb7 \strokec9 </\cf10 \strokec10 html\cf9 \strokec9 >\cf5 \cb1 \strokec5 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+\
+##FINAL STYLES.CSS\
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb7 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec10 body\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 184\cf5 \strokec5 , \cf15 \strokec15 132\cf5 \strokec5 , \cf15 \strokec15 46\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #back-wall\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #8B4513\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 100%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 60%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 -1\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #offwhite-character\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 550px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 GhostWhite\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 20%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 17.5%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #white-hat\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-style:\cf5 \strokec5  \cf14 \strokec14 solid\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 120px\cf5 \strokec5  \cf15 \strokec15 140px\cf5 \strokec5  \cf15 \strokec15 180px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-top-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-right-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-bottom-color:\cf5 \strokec5  \cf14 \strokec14 GhostWhite\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-left-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -140px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #black-mask\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 100%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 50px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #gray-instrument\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 15%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 167\cf5 \strokec5 , \cf15 \strokec15 162\cf5 \strokec5 , \cf15 \strokec15 117\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 50px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 125px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .black-dot\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 10px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 10px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 block\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin:\cf5 \strokec5  \cf14 \strokec14 auto\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-top:\cf5 \strokec5  \cf15 \strokec15 65%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #tan-table\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 450px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 140px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #D2691E\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 275px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 15px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #black-character\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 500px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 30%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 59%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #black-hat\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-style:\cf5 \strokec5  \cf14 \strokec14 solid\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-top-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-right-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-bottom-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-left-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #gray-mask\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 167\cf5 \strokec5 , \cf15 \strokec15 162\cf5 \strokec5 , \cf15 \strokec15 117\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -10px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 70px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #white-paper\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 400px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 100px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 GhostWhite\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 250px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 -150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 1\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .fa-music\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 inline-block\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-top:\cf5 \strokec5  \cf15 \strokec15 8%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-left:\cf5 \strokec5  \cf15 \strokec15 13%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .blue\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #1E90FF\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #blue-left\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 500px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 20%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 20%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #blue-right\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 400px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 300px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #orange-character\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 250px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 550px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 240\cf5 \strokec5 , \cf15 \strokec15 78\cf5 \strokec5 , \cf15 \strokec15 42\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 25%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #black-round-hat\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 180px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 rgb(\cf15 \strokec15 45\cf5 \strokec5 , \cf15 \strokec15 31\cf5 \strokec5 , \cf15 \strokec15 19\cf14 \strokec14 )\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -100px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 5px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 -1\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #eyes-div\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 180px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 50px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 -40px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 20px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 3\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #triangles\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 250px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 550px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .triangle\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-style:\cf5 \strokec5  \cf14 \strokec14 solid\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-width:\cf5 \strokec5  \cf15 \strokec15 42px\cf5 \strokec5  \cf15 \strokec15 45px\cf5 \strokec5  \cf15 \strokec15 45px\cf5 \strokec5  \cf15 \strokec15 0\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-top-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-right-color:\cf5 \strokec5  \cf14 \strokec14 Gold\cf5 \strokec5 ; \cf16 \strokec16 /* yellow */\cf5 \cb1 \strokec5 \
+\cb7   \cf8 \strokec8 border-bottom-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-left-color:\cf5 \strokec5  \cf14 \strokec14 transparent\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 inline-block\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #guitar\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 100%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 100px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 120px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 3\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .guitar\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 150px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 120px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 Goldenrod\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #guitar-left\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 0px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #guitar-right\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 100px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .fa-bars\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 display:\cf5 \strokec5  \cf14 \strokec14 block\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-top:\cf5 \strokec5  \cf15 \strokec15 30%\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 margin-left:\cf5 \strokec5  \cf15 \strokec15 40%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 #guitar-neck\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 200px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #D2691E\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 45px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 200px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 z-index:\cf5 \strokec5  \cf15 \strokec15 3\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .eyes\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 width:\cf5 \strokec5  \cf15 \strokec15 35px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 height:\cf5 \strokec5  \cf15 \strokec15 20px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 background-color:\cf5 \strokec5  \cf14 \strokec14 #8B4513\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 border-radius:\cf5 \strokec5  \cf15 \strokec15 20px\cf5 \strokec5  \cf15 \strokec15 50%\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .right\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 15px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 right:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .left\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 position:\cf5 \strokec5  \cf14 \strokec14 absolute\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 top:\cf5 \strokec5  \cf15 \strokec15 15px\cf5 \strokec5 ;\cb1 \
+\cb7   \cf8 \strokec8 left:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\cb7 \}\cb1 \
+\
+\cf10 \cb7 \strokec10 .fas\cf5 \strokec5  \{\cb1 \
+\cb7   \cf8 \strokec8 font-size:\cf5 \strokec5  \cf15 \strokec15 30px\cf5 \strokec5 ;\cb1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+```\
+}

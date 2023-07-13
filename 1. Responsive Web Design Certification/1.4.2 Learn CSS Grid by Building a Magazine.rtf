@@ -1,0 +1,2019 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red24\green26\blue30;\red21\green20\blue38;\red242\green244\blue245;
+\red31\green31\blue49;\red197\green197\blue203;\red109\green109\blue109;\red255\green255\blue254;\red251\green0\blue7;
+\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red242\green239\blue236;\red19\green118\blue70;
+\red9\green60\blue148;\red0\green0\blue0;\red144\green1\blue18;}
+{\*\expandedcolortbl;;\cssrgb\c12157\c13725\c15686;\cssrgb\c10588\c10588\c19608;\cssrgb\c96078\c96471\c96863;
+\cssrgb\c16471\c16471\c25098;\cssrgb\c81569\c81569\c83529;\cssrgb\c50196\c50196\c50196;\cssrgb\c100000\c100000\c99608;\cssrgb\c100000\c0\c0;
+\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c96078\c94902\c94118;\cssrgb\c3529\c52549\c34510;
+\cssrgb\c1569\c31765\c64706;\cssrgb\c0\c0\c0;\cssrgb\c63922\c8235\c8235;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9180\viewh14580\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ## \cf2 \expnd0\expndtw0\kerning0
+Learn CSS Grid by Building a Magazine\cf0 \kerning1\expnd0\expndtw0 \
+Completion Date: 5 Jul 2023\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ## Step 1\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Begin with your standard HTML boilerplate. Add a \cf5 \cb6 DOCTYPE\cf3 \cb4  declaration, an \cf5 \cb6 html\cf3 \cb4  element specifying this page is in English, a \cf5 \cb6 head\cf3 \cb4  element, and a \cf5 \cb6 body\cf3 \cb4  element.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Add a \cf5 \cb6 <meta>\cf3 \cb4  tag with the appropriate \cf5 \cb6 charset\cf3 \cb4  and a \cf5 \cb6 <meta>\cf3 \cb4  tag for mobile responsiveness within the \cf5 \cb6 head\cf3 \cb4  element.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 \expnd0\expndtw0\kerning0
+<!DOCTYPE\cf9  html\cf7 >\cf0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb8 <\cf11 html\cf0  \cf9 lang\cf10 =\cf12 "en"\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 head\cf10 >\cf0 \cb1 \
+\cb8     \cf10 <\cf11 meta\cf0  \cf9 charset\cf10 =\cf12 "UTF-8"\cf0  \cf10 />\cf0 \cb1 \
+\cb8     \cf10 <\cf11 meta\cf0  \cf9 name\cf10 =\cf12 "viewport"\cf0  \cf9 content\cf10 =\cf12 "width=device-width, initial-scale=1.0"\cf0  \cf10 />\cf0 \cb1 \
+\cb8   \cf10 </\cf11 head\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 body\cf10 >\cf0 \cb1 \
+\cb8   \cf10 </\cf11 body\cf10 >\cf0 \cb1 \
+\cf10 \cb8 </\cf11 html\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 2\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Add a \cf5 \cb6 title\cf3 \cb4  element with the text \cf5 \cb6 Magazine\cf3 \cb4 , a \cf5 \cb6 link\cf3 \cb4  element for the \cf5 \cb6 https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap\cf3 \cb4  font stylesheet, a \cf5 \cb6 link\cf3 \cb4  for the \cf5 \cb6 https://use.fontawesome.com/releases/v5.8.2/css/all.css\cf3 \cb4  FontAwesome stylesheet, and a \cf5 \cb6 link\cf3 \cb4  for your \cf5 \cb6 ./styles.css\cf3 \cb4  stylesheet.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Your font stylesheet will load three separate fonts: \cf5 \cb6 Anton\cf3 \cb4 , \cf5 \cb6 Baskervville\cf3 \cb4 , and \cf5 \cb6 Raleway\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+  \cf10 <\cf11 head\cf10 >\cf0 \cb1 \
+\cb8     \cf10 <\cf11 meta\cf0  \cf9 charset\cf10 =\cf12 "UTF-8"\cf0  \cf10 />\cf0 \cb1 \
+\cb8     \cf10 <\cf11 meta\cf0  \cf9 name\cf10 =\cf12 "viewport"\cf0  \cf9 content\cf10 =\cf12 "width=device-width, initial-scale=1.0"\cf0  \cf10 />\cf0 \cb1 \
+\cb8     \cf10 <\cf11 title\cf10 >\cf0 Magazine\cf10 </\cf11 title\cf10 >\cf0 \cb1 \
+\cb8     \cf10 <\cf11 link\cf0 \cb1 \
+\cb8       \cf9 href\cf10 =\cf12 "https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"\cf0 \cb1 \
+\cb8       \cf9 rel\cf10 =\cf12 "stylesheet"\cf10 />\cf0 \cb1 \
+\cb8     \cf10 <\cf11 link\cf0 \cb1 \
+\cb8       \cf9 rel\cf10 =\cf12 "stylesheet"\cf0 \cb1 \
+\cb8       \cf9 href\cf10 =\cf12 "https://use.fontawesome.com/releases/v5.8.2/css/all.css"\cf10 />\cf0 \cb1 \
+\cb8       \cf10 <\cf11 link\cf0  \cf9 rel\cf10 =\cf12 "stylesheet"\cf0  \cf9 href\cf10 =\cf12 "styles.css"\cf0  \cf10 />\cf0 \cb1 \
+\cb8   \cf10 </\cf11 head\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 3\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 body\cf3 \cb4 , create a \cf5 \cb6 main\cf3 \cb4  element. Then in that element, create a \cf5 \cb6 section\cf3 \cb4  with a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 heading\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+    \cf10 <\cf11 main\cf10 >\cf0 \cb1 \
+\cb8       \cf10 <\cf11 section\cf0  \cf9 class\cf10 =\cf12 "heading"\cf10 ></\cf11 section\cf10 >\cf0 \cb1 \
+\cb8     \cf10 </\cf11 main\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 4\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 .heading\cf3 \cb4  element, create a \cf5 \cb6 header\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 hero\cf3 \cb4 .\cb1 \
+\cb4 In that element, create an \cf5 \cb6 img\cf3 \cb4  element with the \cf5 \cb6 src\cf3 \cb4  set to \cf5 \cb6 https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png\cf3 \cb4 , the \cf5 \cb6 alt\cf3 \cb4  set to \cf5 \cb6 freecodecamp logo\cf3 \cb4 , and the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 hero-img\cf3 \cb4 .\cb1 \
+\cb4 The \cf5 \cb6 loading\cf3 \cb4  attribute on an \cf5 \cb6 img\cf3 \cb4  element can be set to \cf5 \cb6 lazy\cf3 \cb4  to tell the browser not to fetch the image resource until it is needed (as in, when the user scrolls the image into view). As an additional benefit, lazy loaded elements will not load until the non-lazy elements are loaded - this means users with slow internet connections can view the content of your page without having to wait for the images to load.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Give your new \cf5 \cb6 img\cf3 \cb4  element a \cf5 \cb6 loading\cf3 \cb4  attribute set to \cf5 \cb6 lazy\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+    \cf10 <\cf11 main\cf10 >\cf0 \cb1 \
+\cb8       \cf10 <\cf11 section\cf0  \cf9 class\cf10 =\cf12 "heading"\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 header\cf0  \cf9 class\cf10 =\cf12 "hero"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0  \cf9 class\cf10 =\cf12 "hero-img"\cf0  \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"\cf0  \cf9 alt\cf10 =\cf12 "freecodecamp logo"\cf0  \cf9 loading\cf10 =\cf12 "lazy"\cf10 />\cf0 \cb1 \
+\cb8         \cf10 </\cf11 header\cf10 >\cf0 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf0 \cb1 \
+\cb8     \cf10 </\cf11 main\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 5\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+After your \cf5 \cb6 img\cf3 \cb4  element, add an \cf5 \cb6 h1\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 hero-title\cf3 \cb4  and the text set to \cf5 \cb6 OUR NEW CURRICULUM\cf3 \cb4 , followed by a \cf5 \cb6 p\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 hero-subtitle\cf3 \cb4  and the text set to \cf5 \cb6 Our efforts to restructure our curriculum with a more project-based focus\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+    \cf10 <\cf11 main\cf10 >\cf0 \cb1 \
+\cb8       \cf10 <\cf11 section\cf0  \cf9 class\cf10 =\cf12 "heading"\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 header\cf0  \cf9 class\cf10 =\cf12 "hero"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"\cf0 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "freecodecamp logo"\cf0 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf0 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "hero-img"\cf0 \cb1 \
+\cb8           \cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 h1\cf0  \cf9 class\cf10 =\cf12 "hero-title"\cf10 >\cf0 OUR NEW CURRICULUM\cf10 </\cf11 h1\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "hero-subtitle"\cf10 >\cf0 Our efforts to restructure our curriculum with a more project-based focus\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 </\cf11 header\cf10 >\cf0 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf0 \cb1 \
+\cb8     \cf10 </\cf11 main\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 6\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Your image currently takes up a lot of space. To better see what you are working on, add a \cf5 \cb6 width\cf3 \cb4  attribute to the \cf5 \cb6 img\cf3 \cb4  element, with a value of \cf5 \cb6 400\cf3 \cb4 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 You will remove this later on when you have worked on the CSS.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+    \cf10 <\cf11 main\cf10 >\cf0 \cb1 \
+\cb8       \cf10 <\cf11 section\cf0  \cf9 class\cf10 =\cf12 "heading"\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 header\cf0  \cf9 class\cf10 =\cf12 "hero"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"\cf0 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "freecodecamp logo"\cf0 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf0 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "hero-img"\cf0  \cf9 width\cf10 =\cf12 "400"\cf0 \cb1 \
+\cb8           \cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 h1\cf0  \cf9 class\cf10 =\cf12 "hero-title"\cf10 >\cf0 OUR NEW CURRICULUM\cf10 </\cf11 h1\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "hero-subtitle"\cf10 >\cf0 \cb1 \
+\cb8             Our efforts to restructure our curriculum with a more project-based\cb1 \
+\cb8             focus\cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 </\cf11 header\cf10 >\cf0 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf0 \cb1 \
+\cb8     \cf10 </\cf11 main\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 7\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+After your \cf5 \cb6 header\cf3 \cb4  element, create a \cf5 \cb6 div\cf3 \cb4  with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 author\cf3 \cb4 .\cb1 \
+\cb4 Within that \cf5 \cb6 div\cf3 \cb4 , create a \cf5 \cb6 p\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 author-name\cf3 \cb4  and give it the text \cf5 \cb6 By freeCodeCamp\cf3 \cb4 . Wrap the \cf5 \cb6 freeCodeCamp\cf3 \cb4  portion in an \cf5 \cb6 a\cf3 \cb4  element with the \cf5 \cb6 href\cf3 \cb4  set to \cf5 \cb6 https://freecodecamp.org\cf3 \cb4 , and the \cf5 \cb6 target\cf3 \cb4  set to \cf5 \cb6 _blank\cf3 \cb4 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Below that, add a second \cf5 \cb6 p\cf3 \cb4  element with the class \cf5 \cb6 publish-date\cf3 \cb4  and the text \cf5 \cb6 March 7, 2019\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 div\cf0  \cf9 class\cf10 =\cf12 "author"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "author-name"\cf10 >\cf0 \cb1 \
+\cb8             By\cb1 \
+\cb8             \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://freecodecamp.org"\cf0  \cf9 target\cf10 =\cf12 "_blank"\cf0 \cb1 \
+\cb8               \cf10 >\cf0 freeCodeCamp\cf10 </\cf11 a\cf10 >\cf0 \cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "publish-date"\cf10 >\cf0 March 7, 2019\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 8\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+The \cf5 \cb6 Referer\cf3 \cb4  HTTP header contains information about the address or URL of a page that a user might be visiting from. This information can be used in analytics to track how many users from your page visit freecodecamp.org, for example. Setting the \cf5 \cb6 rel\cf3 \cb4  attribute to \cf5 \cb6 noreferrer\cf3 \cb4  omits this information from the HTTP request. Give your \cf5 \cb6 a\cf3 \cb4  element a \cf5 \cb6 rel\cf3 \cb4  attribute set to \cf5 \cb6 noreferrer\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 div\cf0  \cf9 class\cf10 =\cf12 "author"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "author-name"\cf10 >\cf0 \cb1 \
+\cb8             By\cb1 \
+\cb8             \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://freecodecamp.org"\cf0  \cf9 target\cf10 =\cf12 "_blank"\cf0 \cb1 \
+\cb8                \cf9 rel\cf10 =\cf12 "noreferrer"\cf10 >\cf0 freeCodeCamp\cf10 </\cf11 a\cf0 \cb1 \
+\cb8             \cf10 >\cf0 \cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "publish-date"\cf10 >\cf0 March 7, 2019\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 </\cf11 div\cf10 >\cf0 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf0 \cb1 \
+\cb8     \cf10 </\cf11 main\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 9\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Below your \cf5 \cb6 .author\cf3 \cb4  element, create a new \cf5 \cb6 div\cf3 \cb4  element with the class \cf5 \cb6 social-icons\cf3 \cb4 .\cb1 \
+\cb4 Add five \cf5 \cb6 a\cf3 \cb4  elements within that new \cf5 \cb6 div\cf3 \cb4 , and give them the following \cf5 \cb6 href\cf3 \cb4  attributes.\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The first \cf5 \cb6 a\cf3 \cb4  element should have an \cf5 \cb6 href\cf3 \cb4  set to \cf5 \cb6 https://www.facebook.com/freecodecamp\cf3 \cb4 .\cf0 \cb1 \
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The second \cf5 \cb6 a\cf3 \cb4  element should have an \cf5 \cb6 href\cf3 \cb4  set to \cf5 \cb6 https://twitter.com/freecodecamp\cf3 \cb4 .\cf0 \cb1 \
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The third \cf5 \cb6 a\cf3 \cb4  element should have an \cf5 \cb6 href\cf3 \cb4  set to \cf5 \cb6 https://instagram.com/freecodecamp\cf3 \cb4 .\cf0 \cb1 \
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The fourth \cf5 \cb6 a\cf3 \cb4  element should have an \cf5 \cb6 href\cf3 \cb4  set to \cf5 \cb6 https://www.linkedin.com/school/free-code-camp\cf3 \cb4 .\cf0 \cb1 \
+\ls1\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+The fifth \cf5 \cb6 a\cf3 \cb4  element should have an \cf5 \cb6 href\cf3 \cb4  set to \cf5 \cb6 https://www.youtube.com/freecodecamp\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb8 \expnd0\expndtw0\kerning0
+<\cf11 div\cf0  \cf9 class\cf10 =\cf12 "social-icons"\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://www.facebook.com/freecodecamp"\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://twitter.com/freecodecamp"\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://instagram.com/freecodecamp"\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://www.linkedin.com/school/free-code-camp"\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://www.youtube.com/freecodecamp"\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cf10 \cb8 </\cf11 div\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 10\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within each of your new \cf5 \cb6 a\cf3 \cb4  elements, add an \cf5 \cb6 i\cf3 \cb4  element and give them the following classes:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Your first \cf5 \cb6 i\cf3 \cb4  element should have the class \cf5 \cb6 fab fa-facebook-f\cf0 \cb1 \
+\ls2\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Your second \cf5 \cb6 i\cf3 \cb4  element should have the class \cf5 \cb6 fab fa-twitter\cf0 \cb1 \
+\ls2\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Your third \cf5 \cb6 i\cf3 \cb4  element should have the class \cf5 \cb6 fab fa-instagram\cf0 \cb1 \
+\ls2\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Your fourth \cf5 \cb6 i\cf3 \cb4  element should have the class \cf5 \cb6 fab fa-linkedin-in\cf0 \cb1 \
+\ls2\ilvl0\cf3 \cb4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Your fifth \cf5 \cb6 i\cf3 \cb4  element should have the class \cf5 \cb6 fab fa-youtube\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 div\cf0  \cf9 class\cf10 =\cf12 "social-icons"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://www.facebook.com/freecodecamp/"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 i\cf0  \cf9 class\cf10 =\cf12 "fab fa-facebook-f"\cf10 ></\cf11 i\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://twitter.com/freecodecamp/"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 i\cf0  \cf9 class\cf10 =\cf12 "fab fa-twitter"\cf10 ></\cf11 i\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://instagram.com/freecodecamp"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 i\cf0  \cf9 class\cf10 =\cf12 "fab fa-instagram"\cf10 ></\cf11 i\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://www.linkedin.com/school/free-code-camp/"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 i\cf0  \cf9 class\cf10 =\cf12 "fab fa-linkedin-in"\cf10 ></\cf11 i\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 a\cf0  \cf9 href\cf10 =\cf12 "https://www.youtube.com/freecodecamp"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 i\cf0  \cf9 class\cf10 =\cf12 "fab fa-youtube"\cf10 ></\cf11 i\cf10 ></\cf11 a\cf10 >\cf0 \cb1 \
+\cb8         \cf10 </\cf11 div\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 11\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Below your \cf5 \cb6 .heading\cf3 \cb4  element, create a new \cf5 \cb6 section\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 text\cf3 \cb4 . Within that, create a \cf5 \cb6 p\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 first-paragraph\cf3 \cb4  and the following text:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb13 Soon the freeCodeCamp curriculum will be 100% project-drive\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb8 \expnd0\expndtw0\kerning0
+<\cf11 section\cf0  \cf9 class\cf10 =\cf12 "text"\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "first-paragraph"\cf10 >\cf0 Soon the freeCodeCamp curriculum will be 100% project-driven learning. Instead of a series of coding challenges, you'll learn through building projects - step by step. Before we get into the details, let me emphasize: we are not changing the certifications. All 6 certifications will still have the same 5 required projects. We are only changing the optional coding challenges.\cb1 \
+\cf10 \cb8 </\cf11 p\cf10 >\cf0 \cb1 \
+\cf10 \cb8 </\cf11 section\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 12\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create another \cf5 \cb6 p\cf3 \cb4  element below your \cf5 \cb6 .first-paragraph\cf3 \cb4  element, and give it the following text:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb13 After years - years - of pondering these two problems and \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+      \cf10 <\cf11 section\cf0  \cf9 class\cf10 =\cf12 "text"\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "first-paragraph"\cf10 >\cf0 \cb1 \
+\cb8           Soon the freeCodeCamp curriculum will be 100% project-driven learning. Instead of a series of coding challenges, you'll learn through building projects - step by step. Before we get into the details, let me emphasize: we are not changing the certifications. All 6 certifications will still have the same 5 required projects. We are only changing the optional coding challenges.\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf0 After years - years - of pondering these two problems and how to solve them, I slipped, hit my head on the sink, and when I came to I had a revelation! A vision! A picture in my head! A picture of this! This is what makes time travel possible: the flux capacitor!\cb1 \
+\cf10 \cb8 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 13\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Add a third \cf5 \cb6 p\cf3 \cb4  element at the end of your \cf5 \cb6 .text\cf3 \cb4  element, and give it the following text:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb13 It wasn't as dramatic as Doc's revelation in Back to the Future. It just occurred to me while I was going for a run. The revelation: the entire curriculum should be a series of projects. Instead of individual coding challenges, we'll just have projects, each with their own seamless series of tests. Each test gives you just enough information to figure out how to get it to pass. (And you can view hints if that isn't enough.)\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 p\cf10 >\cf0 It wasn't as dramatic as Doc's revelation in Back to the Future. It just occurred to me while I was going for a run. The revelation: the entire curriculum should be a series of projects. Instead of individual coding challenges, we'll just have projects, each with their own seamless series of tests. Each test gives you just enough information to figure out how to get it to pass. (And you can view hints if that isn't enough.)\cb1 \
+\
+\cf10 \cb8 </\cf11 p\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 14\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+After the three \cf5 \cb6 p\cf3 \cb4  elements within your \cf5 \cb6 .text\cf3 \cb4  element, create a \cf5 \cb6 blockquote\cf3 \cb4  element. Within that, add an \cf5 \cb6 hr\cf3 \cb4  element, a \cf5 \cb6 p\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 quote\cf3 \cb4 , and a second \cf5 \cb6 hr\cf3 \cb4  element.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Give the \cf5 \cb6 .quote\cf3 \cb4  element the text \cf5 \cb6 The entire curriculum should be a series of projects\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb8 \expnd0\expndtw0\kerning0
+<\cf11 blockquote\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 hr\cf10 >\cf0 \cb1 \
+\cb8     \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "quote"\cf10 >\cf0 The entire curriculum should be a series of projects\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8   \cf10 </\cf11 hr\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 hr\cf10 ></\cf11 hr\cf10 >\cf0 \cb1 \
+\cf10 \cb8 </\cf11 blockquote\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 15\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Below your \cf5 \cb6 blockquote\cf3 \cb4  element, add another \cf5 \cb6 p\cf3 \cb4  element with the following text:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb13 No more walls of explanatory text. No more walls of tests. Just one test at a time, as you build up a working project. Over the course of passing thousands of tests, you build up projects and your own understanding of coding fundamentals. There is no transition between lessons and projects, because the lessons themselves are baked into projects. And there's plenty of repetition to help you retain everything because - hey - building projects in real life has plenty of repetition.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 p\cf10 >\cf0 No more walls of explanatory text. No more walls of tests. Just one test at a time, as you build up a working project. Over the course of passing thousands of tests, you build up projects and your own understanding of coding fundamentals. There is no transition between lessons and projects, because the lessons themselves are baked into projects. And there's plenty of repetition to help you retain everything because - hey - building projects in real life has plenty of repetition.\cb1 \
+\cf10 \cb8 </\cf11 p\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 16\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a fifth \cf5 \cb6 p\cf3 \cb4  element at the end of your \cf5 \cb6 .text\cf3 \cb4  element, and give it the following text:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb13 The main design challenge is taking what is currently paragraphs of explanation and instructions and packing them into a single test description text. Each project will involve dozens of tests like this. People will be coding the entire time, rather than switching back and forth from "reading mode" to "coding mode".\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb8 \expnd0\expndtw0\kerning0
+<\cf11 p\cf10 >\cf0 The main design challenge is taking what is currently paragraphs of explanation and instructions and packing them into a single test description text. Each project will involve dozens of tests like this. People will be coding the entire time, rather than switching back and forth from "reading mode" to "coding mode".\cb1 \
+\cf10 \cb8 </\cf11 p\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 17\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create one final \cf5 \cb6 p\cf3 \cb4  element at the end of your \cf5 \cb6 .text\cf3 \cb4  element and give it the following text:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb13 Instead of a series of coding challenges, people will be in their code\
+editor passing one test after another, quickly building up a project.\
+People will get into a real flow state, similar to what they\
+experience when they build the required projects at the end of each\
+certification. They'll get that sense of forward progress right from\
+the beginning. And freeCodeCamp will be a much smoother experience.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+      \cf10 <\cf11 section\cf0  \cf9 class\cf10 =\cf12 "text"\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "first-paragraph"\cf10 >\cf0 \cb1 \
+\cb8           Soon the freeCodeCamp curriculum will be 100% project-driven learning. Instead of a series of coding challenges, you'll learn through building projects - step by step. Before we get into the details, let me emphasize: we are not changing the certifications. All 6 certifications will still have the same 5 required projects. We are only changing the optional coding challenges.\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           After years - years - of pondering these two problems and how to solve them, I slipped, hit my head on the sink, and when I came to I had a revelation! A vision! A picture in my head! A picture of this! This is what makes time travel possible: the flux capacitor!\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           It wasn't as dramatic as Doc's revelation in Back to the Future. It\cb1 \
+\cb8           just occurred to me while I was going for a run. The revelation: the entire curriculum should be a series of projects. Instead of individual coding challenges, we'll just have projects, each with their own seamless series of tests. Each test gives you just enough information to figure out how to get it to pass. (And you can view hints if that isn't enough.)\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 blockquote\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 hr\cf0  \cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "quote"\cf10 >\cf0 \cb1 \
+\cb8             The entire curriculum should be a series of projects\cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 hr\cf0  \cf10 />\cf0 \cb1 \
+\cb8         \cf10 </\cf11 blockquote\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           No more walls of explanatory text. No more walls of tests. Just one\cb1 \
+\cb8           test at a time, as you build up a working project. Over the course of passing thousands of tests, you build up projects and your own understanding of coding fundamentals. There is no transition between lessons and projects, because the lessons themselves are baked into projects. And there's plenty of repetition to help you retain everything because - hey - building projects in real life has plenty of repetition.\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           The main design challenge is taking what is currently paragraphs of explanation and instructions and packing them into a single test description text. Each project will involve dozens of tests like this. People will be coding the entire time, rather than switching back and forth from "reading mode" to "coding mode".\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf0 Instead of a series of coding challenges, people will be in their code\cb1 \
+\cb8 editor passing one test after another, quickly building up a project.\cb1 \
+\cb8 People will get into a real flow state, similar to what they\cb1 \
+\cb8 experience when they build the required projects at the end of each\cb1 \
+\cb8 certification. They'll get that sense of forward progress right from\cb1 \
+\cb8 the beginning. And freeCodeCamp will be a much smoother experience.\cb1 \
+\
+\cf10 \cb8 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 18\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Below your \cf5 \cb6 .text\cf3 \cb4  element, create a new \cf5 \cb6 section\cf3 \cb4  element and give it a \cf5 \cb6 class\cf3 \cb4  of \cf5 \cb6 text text-with-images\cf3 \cb4 . Within that, create an \cf5 \cb6 article\cf3 \cb4  element with a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 brief-history\cf3 \cb4 , and an \cf5 \cb6 aside\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 image-wrapper\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb8 \expnd0\expndtw0\kerning0
+<\cf11 section\cf0  \cf9 class\cf10 =\cf12 "text text-with-images"\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 article\cf0  \cf9 class\cf10 =\cf12 "brief-history"\cf10 ></\cf11 article\cf10 >\cf0 \cb1 \
+\cb8   \cf10 <\cf11 aside\cf0  \cf9 class\cf10 =\cf12 "image-wrapper"\cf10 ></\cf11 aside\cf10 >\cf0 \cb1 \
+\cf10 \cb8 </\cf11 section\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 19\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 article\cf3 \cb4  element, create an \cf5 \cb6 h3\cf3 \cb4  element with the \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 list-title\cf3 \cb4  and the text of \cf5 \cb6 A Brief History\cf3 \cb4 . Below that, create a \cf5 \cb6 p\cf3 \cb4  element with the text \cf5 \cb6 Of the Curriculum\cf3 \cb4 . Then create a \cf5 \cb6 ul\cf3 \cb4  element with the class \cf5 \cb6 lists\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 article\cf0  \cf9 class\cf10 =\cf12 "brief-history"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 h3\cf0  \cf9 class\cf10 =\cf12 "list-title"\cf10 >\cf0 A Brief History\cf10 </\cf11 h3\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 p\cf10 >\cf0 Of the Curriculum\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 ul\cf0  \cf9 class\cf10 =\cf12 "lists"\cf10 ></\cf11 ul\cf10 >\cf0 \cb1 \
+\cb8         \cf10 </\cf11 article\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 20\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 ul\cf3 \cb4  element, create six \cf5 \cb6 li\cf3 \cb4  elements. Add an \cf5 \cb6 h4\cf3 \cb4  element with a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 list-subtitle\cf3 \cb4  and a \cf5 \cb6 p\cf3 \cb4  element to each of your \cf5 \cb6 li\cf3 \cb4  elements.\cb1 \
+\cb4 Then give the \cf5 \cb6 h4\cf3 \cb4  and \cf5 \cb6 p\cf3 \cb4  elements the following text content, in order, with each \cf5 \cb6 h4\cf3 \cb4  using what's on the left side of the colon, and each \cf5 \cb6 p\cf3 \cb4  using what's on the right:\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V1 - 2014\cf3 \cb4 : \cf5 \cb6 We launched freeCodeCamp with a simple list of 15 resources, including Harvard's CS50 and Stanford's Database Class.\cf0 \cb1 \
+\ls3\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V2 - 2015\cf3 \cb4 : \cf5 \cb6 We added interactive algorithm challenges.\cf0 \cb1 \
+\ls3\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V3 - 2015\cf3 \cb4 : \cf5 \cb6 We added our own HTML+CSS challenges (before we'd been relying on General Assembly's Dash course for these).\cf0 \cb1 \
+\ls3\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V4 - 2016\cf3 \cb4 : \cf5 \cb6 We expanded the curriculum to 3 certifications, including Front End, Back End, and Data Visualization. They each had 10 required projects, but only the Front End section had its own challenges. For the other certs, we were still using external resources like Node School.\cf0 \cb1 \
+\ls3\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V5 - 2017\cf3 \cb4 : \cf5 \cb6 We added the back end and data visualization challenges.\cf0 \cb1 \
+\ls3\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+V6 - 2018\cf3 \cb4 : \cf5 \cb6 We launched 6 new certifications to replace our old ones. This was the biggest curriculum improvement to date.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+          \cf10 <\cf11 ul\cf0  \cf9 class\cf10 =\cf12 "lists"\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf0  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf0 V1 - 2014\cf10 </\cf11 h4\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8                 We launched freeCodeCamp with a simple list of 15 resources,\cb1 \
+\cb8                 including Harvard's CS50 and Stanford's Database Class.\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf0  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf0 V2 - 2015\cf10 </\cf11 h4\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf0 We added interactive algorithm challenges.\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf0  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf0 V3 - 2015\cf10 </\cf11 h4\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8                 We added our own HTML+CSS challenges (before we'd been relying\cb1 \
+\cb8                 on General Assembly's Dash course for these).\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf0  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf0 V4 - 2016\cf10 </\cf11 h4\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8                 We expanded the curriculum to 3 certifications, including Front\cb1 \
+\cb8                 End, Back End, and Data Visualization. They each had 10 required\cb1 \
+\cb8                 projects, but only the Front End section had its own challenges.\cb1 \
+\cb8                 For the other certs, we were still using external resources like\cb1 \
+\cb8                 Node School.\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf0  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf0 V5 - 2017\cf10 </\cf11 h4\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf0 We added the back end and data visualization challenges.\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf0  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf0 V6 - 2018\cf10 </\cf11 h4\cf10 >\cf0 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf0 \cb1 \
+\cb8                 We launched 6 new certifications to replace our old ones. This\cb1 \
+\cb8                 was the biggest curriculum improvement to date.\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf0 \cb1 \
+\cb8           \cf10 </\cf11 ul\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 21\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 aside\cf3 \cb4  element, create two \cf5 \cb6 img\cf3 \cb4  elements, a \cf5 \cb6 blockquote\cf3 \cb4  element, and a third \cf5 \cb6 img\cf3 \cb4  element. Give the \cf5 \cb6 blockquote\cf3 \cb4  element a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 image-quote\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 aside\cf0  \cf9 class\cf10 =\cf12 "image-wrapper"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf10 ></\cf11 img\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf10 ></\cf11 img\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 blockquote\cf0  \cf9 class\cf10 =\cf12 "image-quote"\cf10 ></\cf11 blockquote\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf10 ></\cf11 img\cf10 >\cf0 \cb1 \
+\cb8         \cf10 </\cf11 aside\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 22\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within the \cf5 \cb6 .image-wrapper\cf3 \cb4  element, give your first \cf5 \cb6 img\cf3 \cb4  element a \cf5 \cb6 src\cf3 \cb4  of \cf5 \cb6 https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png\cf3 \cb4 , an \cf5 \cb6 alt\cf3 \cb4  of \cf5 \cb6 image of the quote machine project\cf3 \cb4 , a \cf5 \cb6 class\cf3 \cb4  of \cf5 \cb6 image-1\cf3 \cb4 , a \cf5 \cb6 loading\cf3 \cb4  attribute set to \cf5 \cb6 lazy\cf3 \cb4 , a \cf5 \cb6 width\cf3 \cb4  attribute of \cf5 \cb6 600\cf3 \cb4 , and a \cf5 \cb6 height\cf3 \cb4  attribute of \cf5 \cb6 400\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 aside\cf0  \cf9 class\cf10 =\cf12 "image-wrapper"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0  \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"\cf0   \cf9 alt\cf10 =\cf12 "image of the quote machine project"\cf0  \cf9 class\cf10 =\cf12 "image-1"\cf0  \cf9 loading\cf10 =\cf12 "lazy"\cf0  \cf9 width\cf10 =\cf12 "600"\cf0  \cf9 height\cf10 =\cf12 "400"\cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0  \cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 blockquote\cf0  \cf9 class\cf10 =\cf12 "image-quote"\cf10 ></\cf11 blockquote\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0  \cf10 />\cf0 \cb1 \
+\cb8         \cf10 </\cf11 aside\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 23\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 .image-wrapper\cf3 \cb4  element, give the second \cf5 \cb6 img\cf3 \cb4  element a \cf5 \cb6 src\cf3 \cb4  of \cf5 \cb6 https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png\cf3 \cb4 , an \cf5 \cb6 alt\cf3 \cb4  of \cf5 \cb6 image of a calculator project\cf3 \cb4 , a \cf5 \cb6 loading\cf3 \cb4  attribute set to \cf5 \cb6 lazy\cf3 \cb4 , a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 image-2\cf3 \cb4 , a \cf5 \cb6 width\cf3 \cb4  attribute set to \cf5 \cb6 400\cf3 \cb4 , and a \cf5 \cb6 height\cf3 \cb4  attribute set to \cf5 \cb6 400\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+        \cf10 <\cf11 aside\cf0  \cf9 class\cf10 =\cf12 "image-wrapper"\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"\cf0 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "image of the quote machine project"\cf0 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf0 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "image-1"\cf0 \cb1 \
+\cb8             \cf9 width\cf10 =\cf12 "600"\cf0 \cb1 \
+\cb8             \cf9 height\cf10 =\cf12 "400"\cf0 \cb1 \
+\cb8           \cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0  \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"\cf0  \cf9 alt\cf10 =\cf12 "image of a calculator project"\cf0  \cf9 loading\cf10 =\cf12 "lazy"\cf0  \cf9 class\cf10 =\cf12 "image-2"\cf0  \cf9 width\cf10 =\cf12 "400"\cf0  \cf9 height\cf10 =\cf12 "400"\cf10 />\cf0 \cb1 \
+\cb8           \cf10 <\cf11 blockquote\cf0  \cf9 class\cf10 =\cf12 "image-quote"\cf10 ></\cf11 blockquote\cf10 >\cf0 \cb1 \
+\cb8           \cf10 <\cf11 img\cf0  \cf10 />\cf0 \cb1 \
+\cb8         \cf10 </\cf11 aside\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 24\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 .image-wrapper\cf3 \cb4  element, give your third \cf5 \cb6 img\cf3 \cb4  element a \cf5 \cb6 src\cf3 \cb4  of \cf5 \cb6 https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg\cf3 \cb4 , an \cf5 \cb6 alt\cf3 \cb4  of \cf5 \cb6 four people working on code\cf3 \cb4 , a \cf5 \cb6 loading\cf3 \cb4  attribute of \cf5 \cb6 lazy\cf3 \cb4 , a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 image-3\cf3 \cb4 , a \cf5 \cb6 width\cf3 \cb4  attribute set to \cf5 \cb6 600\cf3 \cb4 , and a \cf5 \cb6 height\cf3 \cb4  attribute set to \cf5 \cb6 400\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+          \cf10 <\cf11 img\cf0  \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg"\cf0  \cf9 alt\cf10 =\cf12 "four people working on code"\cf0  \cf9 loading\cf10 =\cf12 "lazy"\cf0  \cf9 class\cf10 =\cf12 "image-3"\cf0  \cf9 width\cf10 =\cf12 "600"\cf0  \cf9 height\cf10 =\cf12 "400"\cf10 />\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 25\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Within your \cf5 \cb6 .image-quote\cf3 \cb4  element, nest an \cf5 \cb6 hr\cf3 \cb4  element, a \cf5 \cb6 p\cf3 \cb4  element and a second \cf5 \cb6 hr\cf3 \cb4  element. Give the \cf5 \cb6 p\cf3 \cb4  element a \cf5 \cb6 class\cf3 \cb4  set to \cf5 \cb6 quote\cf3 \cb4  and the text \cf5 \cb6 The millions of people who are learning to code through freeCodeCamp will have an even better resource to help them learn these fundamentals.\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb8 \expnd0\expndtw0\kerning0
+          \cf10 <\cf11 blockquote\cf0  \cf9 class\cf10 =\cf12 "image-quote"\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 hr\cf10 ></\cf11 hr\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 p\cf0  \cf9 class\cf10 =\cf12 "quote"\cf10 >\cf0 The millions of people who are learning to code through freeCodeCamp will have an even better resource to help them learn these fundamentals.\cf10 </\cf11 p\cf10 >\cf0 \cb1 \
+\cb8             \cf10 <\cf11 hr\cf10 ></\cf11 hr\cf10 >\cf0 \cb1 \
+\cb8           \cf10 </\cf11 blockquote\cf10 >\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 26\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+To start your CSS, normalize the CSS rules by targeting all elements with \cf5 \cb6 *\cf3 \cb4 , including the \cf5 \cb6 ::before\cf3 \cb4  and \cf5 \cb6 ::after\cf3 \cb4  pseudo-selectors.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Set the \cf5 \cb6 padding\cf3 \cb4  and \cf5 \cb6 margin\cf3 \cb4  properties both to \cf5 \cb6 0\cf3 \cb4  and set the \cf5 \cb6 box-sizing\cf3 \cb4  property to \cf5 \cb6 border-box\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+*\cf0 , \cf11 ::before\cf0 , \cf11 ::after\cf0  \{\cb1 \
+\cb8   \cf9 padding:\cf0  \cf14 0\cf0 ;\cb1 \
+\cb8   \cf9 margin:\cf0  \cf14 0\cf0 ;\cb1 \
+\cb8   \cf9 box-sizing:\cf0  \cf15 border-box\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 27\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an \cf5 \cb6 html\cf3 \cb4  selector and give it a \cf5 \cb6 font-size\cf3 \cb4  property set to \cf5 \cb6 62.5%\cf3 \cb4 . This will set the default font size for your web page to 10px (the browser default is 16px).\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 This will make it easier for you to work with \cf5 \cb6 rem\cf3 \cb4  units later, as \cf5 \cb6 2rem\cf3 \cb4  would be 20px.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+html\cf0  \{\cb1 \
+\cb8   \cf9 font-size:\cf0  \cf14 62.5%\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 28\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a \cf5 \cb6 body\cf3 \cb4  selector. Set the \cf5 \cb6 font-family\cf3 \cb4  property to \cf5 \cb6 Baskervville\cf3 \cb4 , with a fallback of \cf5 \cb6 serif\cf3 \cb4 . Set the \cf5 \cb6 color\cf3 \cb4  property to \cf5 \cb6 linen\cf3 \cb4  and the \cf5 \cb6 background-color\cf3 \cb4  property to \cf5 \cb6 rgb(20, 30, 40)\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+body\cf0  \{\cb1 \
+\cb8   \cf9 font-family:\cf0  \cf15 Baskervville\cf0 , \cf15 serif\cf0 ;\cb1 \
+\cb8   \cf9 color:\cf0  \cf15 linen\cf0 ;\cb1 \
+\cb8   \cf9 background-color:\cf0  \cf15 rgb(\cf14 20\cf0 , \cf14 30\cf0 , \cf14 40\cf15 )\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 29\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an \cf5 \cb6 h1\cf3 \cb4  selector, and set the \cf5 \cb6 font-family\cf3 \cb4  property to \cf5 \cb6 Anton\cf3 \cb4  with the fallback of \cf5 \cb6 sans-serif\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+h1\cf0  \{\cb1 \
+\cb8   \cf9 font-family:\cf0  \cf15 Anton\cf0 , \cf15 sans-serif\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 30\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an \cf5 \cb6 h2, h3, h4, h5, h6\cf3 \cb4  selector. Give it a \cf5 \cb6 font-family\cf3 \cb4  property set to \cf5 \cb6 Raleway\cf3 \cb4  with a fallback of \cf5 \cb6 sans-serif\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+h2\cf0 , \cf11 h3\cf0 , \cf11 h4\cf0 , \cf11 h5\cf0 , \cf11 h6\cf0  \{\cb1 \
+\cb8   \cf9 font-family:\cf0  \cf15 Raleway\cf0 , \cf15 sans-serif\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 31\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an \cf5 \cb6 a\cf3 \cb4  selector, and give it a \cf5 \cb6 text-decoration\cf3 \cb4  property set to \cf5 \cb6 none\cf3 \cb4  and a \cf5 \cb6 color\cf3 \cb4  property set to \cf5 \cb6 linen\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+a\cf0  \{\cb1 \
+\cb8   \cf9 text-decoration:\cf0  \cf15 none\cf0 ;\cb1 \
+\cb8   \cf9 color:\cf0  \cf15 linen\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 32\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Now you are ready to start putting together the grid layout. CSS Grid offers a two-dimensional grid-based layout, allowing you to center items horizontally and vertically while still retaining control to do things like overlap elements.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Begin by creating a \cf5 \cb6 main\cf3 \cb4  selector and giving it a \cf5 \cb6 display\cf3 \cb4  property set to \cf5 \cb6 grid\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+main\cf0  \{\cb1 \
+\cb8   \cf9 display:\cf0  \cf15 grid\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 33\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Now you can style the layout of your grid. CSS Grid is similar to Flexbox in that it has a special property for both the parent and child elements.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 In this case, your parent element is the \cf5 \cb6 main\cf3 \cb4  element. Set the content to have a three-column layout by adding a \cf5 \cb6 grid-template-columns\cf3 \cb4  property with a value of \cf5 \cb6 1fr 94rem 1fr\cf3 \cb4 . This will create three columns where the middle column is \cf5 \cb6 94rem\cf3 \cb4  wide, and the first and last columns are both 1 fraction of the remaining space in the grid container.\cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+main\cf0  \{\cb1 \
+\cb8   \cf9 display:\cf0  \cf15 grid\cf0 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf0  \cf14 1\cf15 fr\cf0  \cf14 94rem\cf0  \cf14 1\cf15 fr\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 34\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Use the \cf5 \cb6 minmax\cf3 \cb4  function to make your columns responsive on any device. The \cf5 \cb6 minmax\cf3 \cb4  function takes two arguments, the first being the minimum value and the second being the maximum. These values could be a length, percentage, \cf5 \cb6 fr\cf3 \cb4 , or even a keyword like \cf5 \cb6 max-content\cf3 \cb4 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Wrap each of your already defined values of the \cf5 \cb6 grid-template-columns\cf3 \cb4  property in a \cf5 \cb6 minmax\cf3 \cb4  function, using each value as the second argument. The first argument should be \cf5 \cb6 2rem\cf3 \cb4 , \cf5 \cb6 min-content\cf3 \cb4 , and \cf5 \cb6 2rem\cf3 \cb4  respectively.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+main\cf0  \{\cb1 \
+\cb8   \cf9 display:\cf0  \cf15 grid\cf0 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf0  \cf15 minmax(\cf14 2rem\cf0 , \cf14 1\cf15 fr)\cf0  \cf15 minmax(min-content\cf0 , \cf14 94rem\cf15 )\cf0  \cf15 minmax(\cf14 2rem\cf0 , \cf14 1\cf15 fr)\cf0 \cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 35\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+To add space between rows in the grid layout, you can use the \cf5 \cb6 row-gap\cf3 \cb4  property. Give the \cf5 \cb6 main\cf3 \cb4  selector a \cf5 \cb6 row-gap\cf3 \cb4  property of \cf5 \cb6 3rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+main\cf0  \{\cb1 \
+\cb8   \cf9 display:\cf0  \cf15 grid\cf0 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf0  \cf15 minmax(\cf14 2rem\cf0 , \cf14 1\cf15 fr)\cf0  \cf15 minmax(min-content\cf0 , \cf14 94rem\cf15 )\cf0  \cf15 minmax(\cf14 2rem\cf0 , \cf14 1\cf15 fr)\cf0 ;\cb1 \
+\cb8   \cf9 row-gap:\cf0  \cf14 3rem\cf0 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 36\
+\pard\pardeftab720\sa432\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Your magazine will have three primary sections. You already set the overall layout in the \cf5 \cb6 main\cf3 \cb4  rule, but you can adjust the placement in the child rules.\cb1 \
+\cb4 One option is the \cf5 \cb6 grid-column\cf3 \cb4  property, which is shorthand for \cf5 \cb6 grid-column-start\cf3 \cb4  and \cf5 \cb6 grid-column-end\cf3 \cb4 . The \cf5 \cb6 grid-column\cf3 \cb4  property tells the grid item which grid line to start and end at.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 Create a \cf5 \cb6 .heading\cf3 \cb4  rule and set the \cf5 \cb6 grid-column\cf3 \cb4  property to \cf5 \cb6 2 / 3\cf3 \cb4 . This will tell the \cf5 \cb6 .heading\cf3 \cb4  element to start at grid line 2 and end at grid line 3\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.heading\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf14 2\cf16  / \cf14 3\cf16 ; \cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 37\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .text\cf3 \cb4 \'a0selector and give it a\'a0\cf16 \cb1 grid-column\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 2 / 3\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 38\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+For additional control over the layout of your content, you can have a CSS Grid within a CSS Grid.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Set the\'a0display\'a0property of your\'a0.heading\'a0selector to\'a0grid.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.heading\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 39\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Now you can style the content of the\'a0.heading\'a0element with CSS Grid.\
+The CSS\'a0repeat()\'a0function is used to repeat a value, rather than writing it out manually, and is helpful for grid layouts. For example, setting the\'a0grid-template-columns\'a0property to\'a0repeat(20, 200px)\'a0would create 20 columns each\'a0200px\'a0wide.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Give your\'a0.heading\'a0element a\'a0grid-template-columns\'a0property set to\'a0repeat(2, 1fr)\'a0to create two columns of equal width.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.heading\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 2\cf16 ,\cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 40\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Give your\'a0\cf16 \cb1 .heading\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 row-gap\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1.5rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.heading\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 2\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 row-gap:\cf16  \cf14 1.5rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 41\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Remember that the\'a0grid-column\'a0property determines which columns an element starts and ends at. There may be times where you are unsure of how many columns your grid will have, but you want an element to stop at the last column. To do this, you can use\'a0-1\'a0for the end column.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Create a\'a0.hero\'a0selector and give it a\'a0grid-column\'a0property set to\'a01 / -1. This will tell the element to span the full width of the grid.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.hero\cf16 \cb8  \{\cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8   \cf9 \cb8 grid-column:\cf16 \cb8  \cf14 \cb8 1\cf16 \cb8  / \cf14 \cb8 -1\cf16 \cb8 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 42\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Give the\'a0\cf16 \cb1 .hero\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 position\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 relative\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.hero\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 1\cf16  / \cf14 -1\cf16 ;\cb1 \
+\cb8   \cf9 position:\cf16  \cf15 relative\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 43\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+You should remove the temporary\'a0\cf16 \cb1 width\cf3 \cb4 \'a0attribute before writing the CSS for your\'a0\cf16 \cb1 .hero-img\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8 \expnd0\expndtw0\kerning0
+          \cf10 <\cf11 img\cf16 \cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"\cf16 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "freecodecamp logo"\cf16 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf16 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "hero-img"\cf16 \cb1 \
+\cb8           \cf10 />\cf16 \cb1 \
+\cb8           \cf10 <\cf11 h1\cf16  \cf9 class\cf10 =\cf12 "hero-title"\cf10 >\cf16 OUR NEW CURRICULUM\cf10 </\cf11 h1\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "hero-subtitle"\cf10 >\cf16 \cb1 \
+\cb8             Our efforts to restructure our curriculum with a more project-based\cb1 \
+\cb8             focus\cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 44\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Create an\'a0img\'a0selector and give it a\'a0width\'a0property set to\'a0100%, and an\'a0object-fit\'a0property set to\'a0cover.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 The\'a0object-fit\'a0property tells the browser how to position the element within its container. In this case,\'a0cover\'a0will set the image to fill the container, cropping as needed to avoid changing the aspect ratio.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+img\cf16  \{\cb1 \
+\cb8   \cf9 width:\cf16  \cf14 100%\cf16 ;\cb1 \
+\cb8   \cf9 object-fit:\cf16  \cf15 cover\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 45\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .hero-title\cf3 \cb4 \'a0selector and give it a\'a0\cf16 \cb1 text-align\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 center\cf3 \cb4 , a\'a0\cf16 \cb1 color\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 orangered\cf3 \cb4 \'a0and a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 8rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.hero-title\cf16  \{\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 8rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 46\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+The subtitle also needs to be styled. Create a\'a0\cf16 \cb1 .hero-subtitle\cf3 \cb4 \'a0selector and give it a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 2.4rem\cf3 \cb4 , a\'a0\cf16 \cb1 color\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 orangered\cf3 \cb4 , and a\'a0\cf16 \cb1 text-align\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 center\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.hero-subtitle\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2.4rem\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 47\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an\'a0\cf16 \cb1 .author\cf3 \cb4 \'a0selector and give it a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 2rem\cf3 \cb4 \'a0and a\'a0\cf16 \cb1 font-family\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 Raleway\cf3 \cb4 \'a0with a fallback of\'a0\cf16 \cb1 sans-serif\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.author\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf15 Raleway\cf16 , \cf15 sans-serif\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 48\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0.author-name a:hover\'a0selector and give it a\'a0background-color\'a0property set to\'a0#306203.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 This will create a hover effect only for the\'a0a\'a0element within the\'a0.author-name, showing the original freeCodeCamp green in the background.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.author-name\cf16  \cf11 a: hover\cf16 \{\cb1 \
+\cb8   \cf9 background-color:\cf16  \cf15 #306203\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 49\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .publish-date\cf3 \cb4 \'a0selector and give it a\'a0\cf16 \cb1 color\cf3 \cb4 \'a0property of\'a0\cf16 \cb1 rgba(255, 255, 255, 0.5)\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.publish-date\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 rgba(\cf14 255\cf16 , \cf14 255\cf16 , \cf14 255\cf16 , \cf14 0.5\cf15 )\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 50\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .social-icons\cf3 \cb4 \'a0selector. Give it a\'a0\cf16 \cb1 display\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 grid\cf3 \cb4 , and a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 3rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.social-icons\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 51\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+The default settings for CSS Grid will create additional rows as needed, unlike Flexbox. Give the\'a0\cf16 \cb1 .social-icons\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 grid-template-columns\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 repeat(5, 1fr)\cf3 \cb4 \'a0to arrange the icons in a single row.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.social-icons\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 5\cf16 ,\cf14 1\cf15 fr)\cf16 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 ```\
+\
+## Step 52\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+If you wanted to add more social icons, but keep them on the same row, you would need to update\'a0grid-template-columns\'a0to create additional columns. As an alternative, you can use the\'a0grid-auto-flow\'a0property.\
+This property takes either\'a0row\'a0or\'a0column\'a0as the first value, with an optional second value of\'a0dense.\'a0grid-auto-flow\'a0uses an auto-placement algorithm to adjust the grid layout. Setting it to\'a0column\'a0will tell the algorithm to create new columns for content as needed. The\'a0dense\'a0value allows the algorithm to backtrack and fill holes in the grid with smaller items, which can result in items appearing out of order.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 For your\'a0.social-icons\'a0selector, set the\'a0grid-auto-flow\'a0property to\'a0column.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.social-icons\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 5\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-flow:\cf16  \cf15 column\cf16 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 53\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Now the auto-placement algorithm will kick in when you add a new icon element. However, the algorithm defaults the new column width to be\'a0auto, which will not match your current columns.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 You can override this with the\'a0grid-auto-columns\'a0property. Give the\'a0.social-icons\'a0selector a\'a0grid-auto-columns\'a0property set to\'a01fr.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.social-icons\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 5\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-flow:\cf16  \cf15 column\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 54\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Much like Flexbox, with CSS Grid you can align the content of grid items with\'a0align-items\'a0and\'a0justify-items.\'a0align-items\'a0will align child elements along the column axis, and\'a0justify-items\'a0will align child elements along the row axis.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Give the\'a0.social-icons\'a0selector an\'a0align-items\'a0property set to\'a0center.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.social-icons\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 5\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-flow:\cf16  \cf15 column\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 align-items:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 55\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Give the\'a0\cf16 \cb1 .text\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1.8rem\cf3 \cb4 \'a0and a\'a0\cf16 \cb1 letter-spacing\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 0.6px\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 1.8rem\cf16 ;\cb1 \
+\cb8   \cf9 letter-spacing:\cf16  \cf14 0.6px\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 56\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+our\'a0.text\'a0element is not a CSS Grid, but you can create columns within an element without using Grid by using the\'a0column-width\'a0property.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Give your\'a0.text\'a0selector a\'a0column-width\'a0property set to\'a025rem.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 1.8rem\cf16 ;\cb1 \
+\cb8   \cf9 letter-spacing:\cf16  \cf14 0.6px\cf16 ;\cb1 \
+\cb8   \cf9 column-width:\cf16  \cf14 25rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 57\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Magazines often use justified text in their printed content to structure their layout and control the flow of their content. While this works in printed form, justified text on websites can be an accessibility concern, for example presenting challenges for folks with dyslexia.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 To make your project look like a printed magazine, give the\'a0.text\'a0selector a\'a0text-align\'a0property set to\'a0justify.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 1.8rem\cf16 ;\cb1 \
+\cb8   \cf9 letter-spacing:\cf16  \cf14 0.6px\cf16 ;\cb1 \
+\cb8   \cf9 column-width:\cf16  \cf14 25rem\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 justify\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 58\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+The\'a0::first-letter\'a0pseudo-selector allows you to target the first letter in the text content of an element.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Create a\'a0.first-paragraph::first-letter\'a0selector and set the\'a0font-size\'a0property to\'a06rem. Also give it a\'a0color\'a0property set to\'a0orangered\'a0to make it stand out.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.first-paragraph::first-letter\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 6rem\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 59\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+The other text has been shifted out of place. Move it into position by giving the\'a0\cf16 \cb1 .first-paragraph::first-letter\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 float\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 left\cf3 \cb4 \'a0and a\'a0\cf16 \cb1 margin-right\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.first-paragraph::first-letter\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 6rem\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8   \cf9 float:\cf16  \cf15 left\cf16 ;\cb1 \
+\cb8   \cf9 margin-right:\cf16  \cf14 1rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 60\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an\'a0\cf16 \cb1 hr\cf3 \cb4 \'a0selector, and give it a\'a0\cf16 \cb1 margin\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1.5rem 0\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+hr\cf16  \{\cb1 \
+\cb8   \cf9 margin:\cf16  \cf14 1.5rem\cf16  \cf14 0\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 61\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+To give the\'a0\cf16 \cb1 hr\cf3 \cb4 \'a0a color, you need to adjust the\'a0\cf16 \cb1 border\cf3 \cb4 \'a0property. Give the\'a0\cf16 \cb1 hr\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 border\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1px solid rgba(120, 120, 120, 0.6)\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+hr\cf16  \{\cb1 \
+\cb8   \cf9 margin:\cf16  \cf14 1.5rem\cf16  \cf14 0\cf16 ;\cb1 \
+\cb8   \cf9 border:\cf16  \cf14 1px\cf16  \cf15 solid\cf16  \cf15 rgba(\cf14 120\cf16 , \cf14 120\cf16 , \cf14 120\cf16 , \cf14 0.6\cf15 )\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 62\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .quote\cf3 \cb4 \'a0selector. Give it a\'a0\cf16 \cb1 color\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 #00beef\cf3 \cb4 , a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 2.4rem\cf3 \cb4 , and a\'a0\cf16 \cb1 text-align\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 center\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.quote\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 #00beef\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2.4rem\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 63\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+To make the quote text stand out more, give the\'a0\cf16 \cb1 .quote\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 font-family\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 Raleway\cf3 \cb4 \'a0with a fallback of\'a0\cf16 \cb1 sans-serif\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.quote\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 #00beef\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2.4rem\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf15 Raleway\cf16 , \cf15 sans-serif\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 64\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+A quote is not really a quote without proper quotation marks. You can add these with CSS pseudo selectors.\
+Create a\'a0.quote::before\'a0selector and set the\'a0content\'a0property to\'a0"\'a0with a space following it.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Also, create a\'a0.quote::after\'a0selector and set the\'a0content\'a0property to\'a0"\'a0with a space preceding it.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.quote::before\cf16  \{\cb1 \
+\cb8   \cf9 content:\cf17 '" '\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .quote::after\cf16  \{\cb1 \
+\cb8   \cf9 content:\cf17 ' "'\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 65\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Now it's time to style your third\'a0section. Note that it has the\'a0text\'a0and\'a0text-with-images\'a0values for the\'a0class\'a0attribute, which means it is already inheriting the styles from your\'a0.text\'a0rule.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Create a\'a0.text-with-images\'a0selector and set the\'a0display\'a0property to\'a0grid.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text-with-images\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ; \cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 66\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+You will need to have a column for text and a column for images. Give the\'a0\cf16 \cb1 .text-with-images\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 grid-template-columns\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1fr 2fr\cf3 \cb4 . Also set the\'a0\cf16 \cb1 column-gap\cf3 \cb4 \'a0property to\'a0\cf16 \cb1 3rem\cf3 \cb4 \'a0to provide more spacing between the columns.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text-with-images\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16  \cf14 2\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 column-gap:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 67\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Give the\'a0\cf16 \cb1 .text-with-images\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 margin-bottom\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 3rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.text-with-images\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16  \cf14 2\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 column-gap:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 margin-bottom:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 68\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .lists\cf3 \cb4 \'a0selector and set the\'a0\cf16 \cb1 list-style-type\cf3 \cb4 \'a0property to\'a0\cf16 \cb1 none\cf3 \cb4 . This will get rid of the bullet points on the list items.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.lists\cf16  \{\cb1 \
+\cb8   \cf9 list-style-type:\cf16  \cf15 none\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 69\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Give the\'a0\cf16 \cb1 .lists\cf3 \cb4 \'a0selector a\'a0\cf16 \cb1 margin-top\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 2rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.lists\cf16  \{\cb1 \
+\cb8   \cf9 list-style-type:\cf16  \cf15 none\cf16 ;\cb1 \
+\cb8   \cf9 margin-top:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 70\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .lists li\cf3 \cb4 \'a0rule to target the list items within your\'a0\cf16 \cb1 .lists\cf3 \cb4 \'a0element. Give it a\'a0\cf16 \cb1 margin-bottom\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1.5rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.lists\cf16  \cf11 li\cf16  \{\cb1 \
+\cb8   \cf9 margin-bottom:\cf16  \cf14 1.5rem\cf16 \cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 71\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a\'a0\cf16 \cb1 .list-title, .list-subtitle\cf3 \cb4 \'a0selector and set the\'a0\cf16 \cb1 color\cf3 \cb4 \'a0property to\'a0\cf16 \cb1 #00beef\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.list-title\cf16 , \cf11 .list-subtitle\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 #00beef\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 72\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Time to style the last section of the magazine - the images.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 The images are wrapped with an\'a0aside\'a0element using the\'a0image-wrapper\'a0class, so create an\'a0.image-wrapper\'a0selector. Set the\'a0display\'a0property to\'a0grid.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.image-wrapper\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf15 grid\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 73\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+The images should be within a two column, three row layout.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Give the\'a0.image-wrapper\'a0selector a\'a0grid-template-columns\'a0property set to\'a02fr 1fr\'a0and a\'a0grid-template-rows\'a0property set to\'a0repeat(3, min-content). This will give our grid rows that adjust in height based on the content, but columns that remain a fixed width based on the container.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.image-wrapper\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 2\cf15 fr\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-rows:\cf16  \cf15 repeat(\cf14 3\cf16 , \cf15 min-content)\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 74\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+The\'a0gap\'a0property is a shorthand way to set the value of\'a0column-gap\'a0and\'a0row-gap\'a0at the same time. If given one value, it sets the\'a0column-gap\'a0and\'a0row-gap\'a0both to that value. If given two values, it sets the\'a0row-gap\'a0to the first value and the\'a0column-gap\'a0to the second.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Give the\'a0.image-wrapper\'a0selector a\'a0gap\'a0property set to\'a02rem.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.image-wrapper\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 2\cf15 fr\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-rows:\cf16  \cf15 repeat(\cf14 3\cf16 , \cf15 min-content)\cf16 ;\cb1 \
+\cb8   \cf9 gap:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 75\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+The\'a0place-items\'a0property can be used to set the\'a0align-items\'a0and\'a0justify-items\'a0values at the same time. The\'a0place-items\'a0property takes one or two values. If one value is provided, it is used for both the\'a0align-items\'a0and\'a0justify-items\'a0properties. If two values are provided, the first value is used for the\'a0align-items\'a0property and the second value is used for the\'a0justify-items\'a0property.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Give the\'a0.image-wrapper\'a0selector a\'a0place-items\'a0property set to\'a0center.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.image-wrapper\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 2\cf15 fr\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-rows:\cf16  \cf15 repeat(\cf14 3\cf16 , \cf15 min-content)\cf16 ;\cb1 \
+\cb8   \cf9 gap:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8   \cf9 place-items:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 76\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create an\'a0\cf16 \cb1 .image-1, .image-3\cf3 \cb4 \'a0rule and give it a\'a0\cf16 \cb1 grid-column\cf3 \cb4 \'a0property set to\'a0\cf16 \cb1 1 / -1\cf3 \cb4 . This will allow the first and third images to span the full width of the grid.\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+.image-1\cf16 , \cf11 .image-3\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 1\cf16  / \cf14 -1\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 77\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Now that the magazine layout is finished, you need to make it responsive.\
+Start with a\'a0@media\'a0query for\'a0only screen\'a0with a\'a0max-width\'a0of\'a0720px. Inside, create an\'a0.image-wrapper\'a0selector and give it a\'a0grid-template-columns\'a0property of\'a01fr.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 This will collapse the three images into one column on smaller screens.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8 \expnd0\expndtw0\kerning0
+@\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  720\cf11 px\cf16 ) \{\cb1 \
+\cb8   .image-wrapper \{\cb1 \
+\cb8     \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 78\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Create another\'a0@media\'a0query for\'a0only screen\'a0with a\'a0max-width\'a0of\'a0600px. Within, create a\'a0.text-with-images\'a0rule and give it a\'a0grid-template-columns\'a0property of\'a01fr.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 This will collapse your bottom text area into a single column on smaller screens.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 ```\cf16 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8 @\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  600\cf11 px\cf16 ) \{\cb1 \
+\cb8   .text-with-images \{\cb1 \
+\cb8     \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 79\
+\pard\pardeftab720\partightenfactor0
+\cf3 \cb4 \expnd0\expndtw0\kerning0
+Create a third\'a0\cf16 \cb1 @media\cf3 \cb4 \'a0query for\'a0\cf16 \cb1 only screen\cf3 \cb4 \'a0with a\'a0\cf16 \cb1 max-width\cf3 \cb4 \'a0of\'a0\cf16 \cb1 550px\cf3 \cb4 . Within, create a\'a0\cf16 \cb1 .hero-title\cf3 \cb4 \'a0selector with a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0set to\'a0\cf16 \cb1 6rem\cf3 \cb4 , a\'a0\cf16 \cb1 .hero-subtitle, .author, .quote, .list-title\cf3 \cb4 \'a0selector with a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0set to\'a0\cf16 \cb1 1.8rem\cf3 \cb4 , a\'a0\cf16 \cb1 .social-icons\cf3 \cb4 \'a0selector with a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0set to\'a0\cf16 \cb1 2rem\cf3 \cb4 , and a\'a0\cf16 \cb1 .text\cf3 \cb4 \'a0selector with a\'a0\cf16 \cb1 font-size\cf3 \cb4 \'a0set to\'a0\cf16 \cb1 1.6rem\cf3 \cb4 .\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8 \expnd0\expndtw0\kerning0
+@\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  550\cf11 px\cf16 ) \{\cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8   .hero-title \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 6rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8   \cf11 .hero-subtitle\cf16 , \cf11 .author\cf16 , \cf11 .quote\cf16 , \cf11 .list-title\cf16  \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 1.8rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8   \cf11 .social-icons\cf16  \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8   \cf11 .text\cf16  \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 1.6rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## Step 80\
+\pard\pardeftab720\sl360\sa288\partightenfactor0
+\cf16 \cb4 \expnd0\expndtw0\kerning0
+Create one final\'a0@media\'a0query for\'a0only screen\'a0with a\'a0max-width\'a0of\'a0420px. Within, create a\'a0.hero-title\'a0selector with a\'a0font-size\'a0property set to\'a04.5rem.\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf16 Congratulations! Your magazine is now complete.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8 \expnd0\expndtw0\kerning0
+@\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  420\cf11 px\cf16 )  \{\cb1 \
+\cb8     .hero-title \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 4.5rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 ```\
+\
+## FINAL INDEX.HTML\
+\
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf7 \cb8 \expnd0\expndtw0\kerning0
+<!DOCTYPE\cf9  html\cf7 >\cf16 \cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb8 <\cf11 html\cf16  \cf9 lang\cf10 =\cf12 "en"\cf10 >\cf16 \cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf16 \cb8   \cf10 <\cf11 head\cf10 >\cf16 \cb1 \
+\cb8     \cf10 <\cf11 meta\cf16  \cf9 charset\cf10 =\cf12 "UTF-8"\cf16  \cf10 />\cf16 \cb1 \
+\cb8     \cf10 <\cf11 meta\cf16  \cf9 name\cf10 =\cf12 "viewport"\cf16  \cf9 content\cf10 =\cf12 "width=device-width, initial-scale=1.0"\cf16  \cf10 />\cf16 \cb1 \
+\cb8     \cf10 <\cf11 title\cf10 >\cf16 Magazine\cf10 </\cf11 title\cf10 >\cf16 \cb1 \
+\cb8     \cf10 <\cf11 link\cf16 \cb1 \
+\cb8       \cf9 href\cf10 =\cf12 "https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"\cf16 \cb1 \
+\cb8       \cf9 rel\cf10 =\cf12 "stylesheet"\cf16 \cb1 \
+\cb8     \cf10 />\cf16 \cb1 \
+\cb8     \cf10 <\cf11 link\cf16 \cb1 \
+\cb8       \cf9 rel\cf10 =\cf12 "stylesheet"\cf16 \cb1 \
+\cb8       \cf9 href\cf10 =\cf12 "https://use.fontawesome.com/releases/v5.8.2/css/all.css"\cf16 \cb1 \
+\cb8     \cf10 />\cf16 \cb1 \
+\cb8     \cf10 <\cf11 link\cf16  \cf9 rel\cf10 =\cf12 "stylesheet"\cf16  \cf9 href\cf10 =\cf12 "styles.css"\cf16  \cf10 />\cf16 \cb1 \
+\cb8   \cf10 </\cf11 head\cf10 >\cf16 \cb1 \
+\cb8   \cf10 <\cf11 body\cf10 >\cf16 \cb1 \
+\cb8     \cf10 <\cf11 main\cf10 >\cf16 \cb1 \
+\cb8       \cf10 <\cf11 section\cf16  \cf9 class\cf10 =\cf12 "heading"\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 header\cf16  \cf9 class\cf10 =\cf12 "hero"\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 img\cf16 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"\cf16 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "freecodecamp logo"\cf16 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf16 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "hero-img"\cf16 \cb1 \
+\cb8           \cf10 />\cf16 \cb1 \
+\cb8           \cf10 <\cf11 h1\cf16  \cf9 class\cf10 =\cf12 "hero-title"\cf10 >\cf16 OUR NEW CURRICULUM\cf10 </\cf11 h1\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "hero-subtitle"\cf10 >\cf16 \cb1 \
+\cb8             Our efforts to restructure our curriculum with a more project-based\cb1 \
+\cb8             focus\cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 </\cf11 header\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 div\cf16  \cf9 class\cf10 =\cf12 "author"\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "author-name"\cf10 >\cf16 \cb1 \
+\cb8             By\cb1 \
+\cb8             \cf10 <\cf11 a\cf16  \cf9 href\cf10 =\cf12 "https://freecodecamp.org"\cf16  \cf9 target\cf10 =\cf12 "_blank"\cf16  \cf9 rel\cf10 =\cf12 "noreferrer"\cf16 \cb1 \
+\cb8               \cf10 >\cf16 freeCodeCamp\cf10 </\cf11 a\cf16 \cb1 \
+\cb8             \cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "publish-date"\cf10 >\cf16 March 7, 2019\cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 </\cf11 div\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 div\cf16  \cf9 class\cf10 =\cf12 "social-icons"\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 a\cf16  \cf9 href\cf10 =\cf12 "https://www.facebook.com/freecodecamp/"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 i\cf16  \cf9 class\cf10 =\cf12 "fab fa-facebook-f"\cf10 ></\cf11 i\cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 a\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 a\cf16  \cf9 href\cf10 =\cf12 "https://twitter.com/freecodecamp/"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 i\cf16  \cf9 class\cf10 =\cf12 "fab fa-twitter"\cf10 ></\cf11 i\cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 a\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 a\cf16  \cf9 href\cf10 =\cf12 "https://instagram.com/freecodecamp"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 i\cf16  \cf9 class\cf10 =\cf12 "fab fa-instagram"\cf10 ></\cf11 i\cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 a\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 a\cf16  \cf9 href\cf10 =\cf12 "https://www.linkedin.com/school/free-code-camp/"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 i\cf16  \cf9 class\cf10 =\cf12 "fab fa-linkedin-in"\cf10 ></\cf11 i\cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 a\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 a\cf16  \cf9 href\cf10 =\cf12 "https://www.youtube.com/freecodecamp"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 i\cf16  \cf9 class\cf10 =\cf12 "fab fa-youtube"\cf10 ></\cf11 i\cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 a\cf10 >\cf16 \cb1 \
+\cb8         \cf10 </\cf11 div\cf10 >\cf16 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf16 \cb1 \
+\cb8       \cf10 <\cf11 section\cf16  \cf9 class\cf10 =\cf12 "text"\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "first-paragraph"\cf10 >\cf16 \cb1 \
+\cb8           Soon the freeCodeCamp curriculum will be 100% project-driven learning. Instead of a series of coding challenges, you'll learn through building projects - step by step. Before we get into the details, let me emphasize: we are not changing the certifications. All 6 certifications will still have the same 5 required projects. We are only changing the optional coding challenges.\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           After years - years - of pondering these two problems and how to solve them, I slipped, hit my head on the sink, and when I came to I had a revelation! A vision! A picture in my head! A picture of this! This is what makes time travel possible: the flux capacitor!\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           It wasn't as dramatic as Doc's revelation in Back to the Future. It\cb1 \
+\cb8           just occurred to me while I was going for a run. The revelation: the entire curriculum should be a series of projects. Instead of individual coding challenges, we'll just have projects, each with their own seamless series of tests. Each test gives you just enough information to figure out how to get it to pass. (And you can view hints if that isn't enough.)\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 blockquote\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 hr\cf16  \cf10 />\cf16 \cb1 \
+\cb8           \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "quote"\cf10 >\cf16 \cb1 \
+\cb8             The entire curriculum should be a series of projects\cb1 \
+\cb8           \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 hr\cf16  \cf10 />\cf16 \cb1 \
+\cb8         \cf10 </\cf11 blockquote\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           No more walls of explanatory text. No more walls of tests. Just one\cb1 \
+\cb8           test at a time, as you build up a working project. Over the course of passing thousands of tests, you build up projects and your own understanding of coding fundamentals. There is no transition between lessons and projects, because the lessons themselves are baked into projects. And there's plenty of repetition to help you retain everything because - hey - building projects in real life has plenty of repetition.\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           The main design challenge is taking what is currently paragraphs of explanation and instructions and packing them into a single test description text. Each project will involve dozens of tests like this. People will be coding the entire time, rather than switching back and forth from "reading mode" to "coding mode".\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           Instead of a series of coding challenges, people will be in their code editor passing one test after another, quickly building up a project. People will get into a real flow state, similar to what they experience when they build the required projects at the end of each certification. They'll get that sense of forward progress right from the beginning. And freeCodeCamp will be a much smoother experience.\cb1 \
+\cb8         \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf16 \cb1 \
+\cb8       \cf10 <\cf11 section\cf16  \cf9 class\cf10 =\cf12 "text text-with-images"\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 article\cf16  \cf9 class\cf10 =\cf12 "brief-history"\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 h3\cf16  \cf9 class\cf10 =\cf12 "list-title"\cf10 >\cf16 A Brief History\cf10 </\cf11 h3\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 p\cf10 >\cf16 Of the Curriculum\cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 ul\cf16  \cf9 class\cf10 =\cf12 "lists"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf16  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf16 V1 - 2014\cf10 </\cf11 h4\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8                 We launched freeCodeCamp with a simple list of 15 resources,\cb1 \
+\cb8                 including Harvard's CS50 and Stanford's Database Class.\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf16  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf16 V2 - 2015\cf10 </\cf11 h4\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf16 We added interactive algorithm challenges.\cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf16  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf16 V3 - 2015\cf10 </\cf11 h4\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8                 We added our own HTML+CSS challenges (before we'd been relying on\cb1 \
+\cb8                 General Assembly's Dash course for these).\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf16  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf16 V4 - 2016\cf10 </\cf11 h4\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8                 We expanded the curriculum to 3 certifications, including Front\cb1 \
+\cb8                 End, Back End, and Data Visualization. They each had 10 required\cb1 \
+\cb8                 projects, but only the Front End section had its own challenges.\cb1 \
+\cb8                 For the other certs, we were still using external resources like\cb1 \
+\cb8                 Node School.\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf16  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf16 V5 - 2017\cf10 </\cf11 h4\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf16 We added the back end and data visualization challenges.\cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 li\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 h4\cf16  \cf9 class\cf10 =\cf12 "list-subtitle"\cf10 >\cf16 V6 - 2018\cf10 </\cf11 h4\cf10 >\cf16 \cb1 \
+\cb8               \cf10 <\cf11 p\cf10 >\cf16 \cb1 \
+\cb8                 We launched 6 new certifications to replace our old ones. This was\cb1 \
+\cb8                 the biggest curriculum improvement to date.\cb1 \
+\cb8               \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 </\cf11 li\cf10 >\cf16 \cb1 \
+\cb8           \cf10 </\cf11 ul\cf10 >\cf16 \cb1 \
+\cb8         \cf10 </\cf11 article\cf10 >\cf16 \cb1 \
+\cb8         \cf10 <\cf11 aside\cf16  \cf9 class\cf10 =\cf12 "image-wrapper"\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 img\cf16 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"\cf16 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "image of the quote machine project"\cf16 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf16 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "image-1"\cf16 \cb1 \
+\cb8             \cf9 width\cf10 =\cf12 "600"\cf16 \cb1 \
+\cb8             \cf9 height\cf10 =\cf12 "400"\cf16 \cb1 \
+\cb8           \cf10 />\cf16 \cb1 \
+\cb8           \cf10 <\cf11 img\cf16 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"\cf16 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "image of a calculator project"\cf16 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf16 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "image-2"\cf16 \cb1 \
+\cb8             \cf9 width\cf10 =\cf12 "400"\cf16 \cb1 \
+\cb8             \cf9 height\cf10 =\cf12 "400"\cf16 \cb1 \
+\cb8           \cf10 />\cf16 \cb1 \
+\cb8           \cf10 <\cf11 blockquote\cf16  \cf9 class\cf10 =\cf12 "image-quote"\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 hr\cf16  \cf10 />\cf16 \cb1 \
+\cb8             \cf10 <\cf11 p\cf16  \cf9 class\cf10 =\cf12 "quote"\cf10 >\cf16 \cb1 \
+\cb8               The millions of people who are learning to code through freeCodeCamp\cb1 \
+\cb8               will have an even better resource to help them learn these\cb1 \
+\cb8               fundamentals.\cb1 \
+\cb8             \cf10 </\cf11 p\cf10 >\cf16 \cb1 \
+\cb8             \cf10 <\cf11 hr\cf16  \cf10 />\cf16 \cb1 \
+\cb8           \cf10 </\cf11 blockquote\cf10 >\cf16 \cb1 \
+\cb8           \cf10 <\cf11 img\cf16 \cb1 \
+\cb8             \cf9 src\cf10 =\cf12 "https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg"\cf16 \cb1 \
+\cb8             \cf9 alt\cf10 =\cf12 "four people working on code"\cf16 \cb1 \
+\cb8             \cf9 loading\cf10 =\cf12 "lazy"\cf16 \cb1 \
+\cb8             \cf9 class\cf10 =\cf12 "image-3"\cf16 \cb1 \
+\cb8             \cf9 width\cf10 =\cf12 "600"\cf16 \cb1 \
+\cb8             \cf9 height\cf10 =\cf12 "400"\cf16 \cb1 \
+\cb8           \cf10 />\cf16 \cb1 \
+\cb8         \cf10 </\cf11 aside\cf10 >\cf16 \cb1 \
+\cb8       \cf10 </\cf11 section\cf10 >\cf16 \cb1 \
+\cb8     \cf10 </\cf11 main\cf10 >\cf16 \cb1 \
+\cb8   \cf10 </\cf11 body\cf10 >\cf16 \cb1 \
+\pard\pardeftab720\sl540\partightenfactor0
+\cf10 \cb8 </\cf11 html\cf10 >\cf16 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+\
+## STYLES.CSS\
+\
+```\
+\pard\pardeftab720\sl540\partightenfactor0
+\cf11 \cb8 \expnd0\expndtw0\kerning0
+*\cf16 ,\cb1 \
+\cf11 \cb8 ::before\cf16 ,\cb1 \
+\cf11 \cb8 ::after\cf16  \{\cb1 \
+\cb8   \cf9 padding:\cf16  \cf14 0\cf16 ;\cb1 \
+\cb8   \cf9 margin:\cf16  \cf14 0\cf16 ;\cb1 \
+\cb8   \cf9 box-sizing:\cf16  \cf15 border-box\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 html\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 62.5%\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 body\cf16  \{\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf17 'Baskervville'\cf16 , \cf15 serif\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 linen\cf16 ;\cb1 \
+\cb8   \cf9 background-color:\cf16  \cf15 rgb(\cf14 20\cf16 , \cf14 30\cf16 , \cf14 40\cf15 )\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 h1\cf16  \{\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf17 'Anton'\cf16 , \cf15 sans-serif\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 h2\cf16 , \cf11 h3\cf16 , \cf11 h4\cf16 , \cf11 h5\cf16 , \cf11 h6\cf16  \{\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf17 'Raleway'\cf16 , \cf15 sans-serif\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 a\cf16  \{\cb1 \
+\cb8   \cf9 text-decoration:\cf16  \cf15 none\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 linen\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 main\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 minmax(\cf14 2rem\cf16 , \cf14 1\cf15 fr)\cf16  \cf15 minmax(min-content\cf16 , \cf14 94rem\cf15 )\cf16  \cf15 minmax(\cf14 2rem\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 row-gap:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 img\cf16  \{\cb1 \
+\cb8   \cf9 width:\cf16  \cf14 100%\cf16 ;\cb1 \
+\cb8   \cf9 object-fit:\cf16  \cf15 cover\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 hr\cf16  \{\cb1 \
+\cb8   \cf9 margin:\cf16  \cf14 1.5rem\cf16  \cf14 0\cf16 ;\cb1 \
+\cb8   \cf9 border:\cf16  \cf14 1px\cf16  \cf15 solid\cf16  \cf15 rgba(\cf14 120\cf16 , \cf14 120\cf16 , \cf14 120\cf16 , \cf14 0.6\cf15 )\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .heading\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 2\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 row-gap:\cf16  \cf14 1.5rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .text\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 2\cf16  / \cf14 3\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 1.8rem\cf16 ;\cb1 \
+\cb8   \cf9 letter-spacing:\cf16  \cf14 0.6px\cf16 ;\cb1 \
+\cb8   \cf9 column-width:\cf16  \cf14 25rem\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 justify\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .hero\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 1\cf16  / \cf14 -1\cf16 ;\cb1 \
+\cb8   \cf9 position:\cf16  \cf15 relative\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .hero-title\cf16  \{\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 8rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .hero-subtitle\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2.4rem\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .author\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf17 "Raleway"\cf16 , \cf15 sans-serif\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .author-name\cf16  \cf11 a:hover\cf16  \{\cb1 \
+\cb8   \cf9 background-color:\cf16  \cf15 #306203\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .publish-date\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 rgba(\cf14 255\cf16 , \cf14 255\cf16 , \cf14 255\cf16 , \cf14 0.5\cf15 )\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .social-icons\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf15 repeat(\cf14 5\cf16 , \cf14 1\cf15 fr)\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-flow:\cf16  \cf15 column\cf16 ;\cb1 \
+\cb8   \cf9 grid-auto-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 align-items:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .first-paragraph::first-letter\cf16  \{\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 6rem\cf16 ;\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 orangered\cf16 ;\cb1 \
+\cb8   \cf9 float:\cf16  \cf15 left\cf16 ;\cb1 \
+\cb8   \cf9 margin-right:\cf16  \cf14 1rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .quote\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 #00beef\cf16 ;\cb1 \
+\cb8   \cf9 font-size:\cf16  \cf14 2.4rem\cf16 ;\cb1 \
+\cb8   \cf9 text-align:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8   \cf9 font-family:\cf16  \cf17 "Raleway"\cf16 , \cf15 sans-serif\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .quote::before\cf16  \{\cb1 \
+\cb8   \cf9 content:\cf16  \cf17 '" '\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .quote::after\cf16  \{\cb1 \
+\cb8   \cf9 content:\cf16  \cf17 ' "'\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .text-with-images\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16  \cf14 2\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 column-gap:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8   \cf9 margin-bottom:\cf16  \cf14 3rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .lists\cf16  \{\cb1 \
+\cb8   \cf9 list-style-type:\cf16  \cf15 none\cf16 ;\cb1 \
+\cb8   \cf9 margin-top:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .lists\cf16  \cf11 li\cf16  \{\cb1 \
+\cb8   \cf9 margin-bottom:\cf16  \cf14 1.5rem\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .list-title\cf16 , \cf11 .list-subtitle\cf16  \{\cb1 \
+\cb8   \cf9 color:\cf16  \cf15 #00beef\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .image-wrapper\cf16  \{\cb1 \
+\cb8   \cf9 display:\cf16  \cf15 grid\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-columns:\cf16  \cf14 2\cf15 fr\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \cf9 grid-template-rows:\cf16  \cf15 repeat(\cf14 3\cf16 , \cf15 min-content)\cf16 ;\cb1 \
+\cb8   \cf9 gap:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8   \cf9 place-items:\cf16  \cf15 center\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cf11 \cb8 .image-1\cf16 , \cf11 .image-3\cf16  \{\cb1 \
+\cb8   \cf9 grid-column:\cf16  \cf14 1\cf16  / \cf14 -1\cf16 ;\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 @\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  720\cf11 px\cf16 ) \{\cb1 \
+\cb8   .image-wrapper \{\cb1 \
+\cb8     \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 @\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  600\cf11 px\cf16 ) \{\cb1 \
+\cb8   .text-with-images \{\cb1 \
+\cb8     \cf9 grid-template-columns:\cf16  \cf14 1\cf15 fr\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 @\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  550\cf11 px\cf16 ) \{\cb1 \
+\cb8   .hero-title \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 6rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8   \cb1 \
+\cb8   \cf11 .hero-subtitle\cf16 ,\cb1 \
+\cb8   \cf11 .author\cf16 ,\cb1 \
+\cb8   \cf11 .quote\cf16 ,\cb1 \
+\cb8   \cf11 .list-title\cf16  \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 1.8rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8   \cb1 \
+\cb8   \cf11 .social-icons\cf16  \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 2rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\
+\cb8   \cf11 .text\cf16  \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 1.6rem\cf16 ;\cb1 \
+\cb8   \} \cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 @\cf11 media\cf16  \cf11 only\cf16  \cf11 screen\cf16  \cf11 and\cf16  (\cf11 max-width:\cf16  420\cf11 px\cf16 )  \{\cb1 \
+\cb8     .hero-title \{\cb1 \
+\cb8     \cf9 font-size:\cf16  \cf14 4.5rem\cf16 ;\cb1 \
+\cb8   \}\cb1 \
+\cb8 \}\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \
+```\
+}
