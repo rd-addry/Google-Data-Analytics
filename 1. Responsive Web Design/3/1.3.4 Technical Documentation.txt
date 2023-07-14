@@ -1,0 +1,202 @@
+##TECHNICAL DOCUMENTATION
+Completion Date: 4 Jul 2023
+
+# Question
+Build a Technical Documentation Page
+Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks
+User Stories:
+	1	You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+	2	Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+	3	The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+	4	Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+	5	The .main-section elements should contain at least ten p elements total (not each)
+	6	The .main-section elements should contain at least five code elements total (not each)
+	7	The .main-section elements should contain at least five li items total (not each)
+	8	You can see a nav element with a corresponding id="navbar"
+	9	The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+	10	Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+	11	The header element in the #navbar must come before any link (a) elements in the navbar
+	12	Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+	13	When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+	14	On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+	15	Your technical documentation should use at least one media query
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
+
+Source:
+https://www.vam.ac.uk/articles/sculpture-techniques
+https://en.wikipedia.org/wiki/Sculpture#:~:text=Sculpture%20is%20the%20branch%20of,of%20height%2C%20width%20and%20depth.
+
+  
+## INDEX.HTML
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oratio Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>ORATIO DOCUMENTATION PAGE</header>
+      <img class="media" src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/c9a49b18042547.562c2d5f85b07.jpg" alt="Oratio Sculpture" />
+      <ul>
+        <li><a class="nav-link" href="#Description">Description</a></li>
+        <li><a class="nav-link" href="#Design">Design</a></li>
+        <li><a class="nav-link" href="#Modelling">Modelling</a></li>
+        <li><a class="nav-link" href="#Molding">Molding</a></li>
+        <li><a class="nav-link" href="#Assembling">Assembling</a></li>
+        <li><a class="nav-link" href="#Exhibition">Exhibition</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Description">
+        <header class="header-section">Description</header>
+        <article>
+          <p><code>Oratio</code>, means to speak or pray. This concept raised an awareness of expressing in the way of speak; on how does it takes to be a complete mere human.</p>
+          <p>This sculpture project is a personal academic capstone project during my bachelor degree on <code>Fine Art</code>.</p>
+          <p>Details:</p>
+          <ul>
+            <li>The sculpture consist of three statues of abstract humanoid figure.</li>
+            <li>60 x 45 x 185 cm</li>
+            <li>Steel & Iron</li>
+            <li>Produced on 2014</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Design">
+        <header class="header-section">Design</header>
+        <article>
+          <p>During design process, we divide into 2 phases, abstract and technical. Abstract elevates the exclusivity of creative process, while technical aspect remains keeping us on track to this project.</p>
+          <p>Due to high production <code>cost</code> of creating a sculpture, detailed approach on planning such as budgetting and production planning is required. On this stage, there are several steps we required to put into action, such as:</p>
+          <ul>
+            <li>Brainstorm & sketching</li>
+            <li>Technical drawing production</li>
+            <li>Budgeting</li>
+            <li>Timeline & Planning</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Modelling">
+        <header class="header-section">Modelling</header>
+        <article>
+          <p>Modelling process is sculpture technique with the base of additives.</p>
+          <p>This process start by building a wire structure from a 12mm iron bar and attached it into an armature, and adding filler into the structure. Clay modelling comes afterward, and modelled into a figure of a human man.</p>
+          <ul>
+            <li>Structure work</li>
+            <li>Filling structure</li>
+            <li>Clay modelling</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Molding">
+        <header class="header-section">Molding</header>
+        <article>
+          <p>Molding process is a sculpture technique to replicate the negative mold of a model.</p>
+          <p>Using fiber resin as mold, creates a strong and flexible open mold which suitable for the project. After the mold was cured, the mold was sawed into two parts, facing front and back. Afterward, grid marks are marked on the inside on the mold as guide for assembly process. These process contains of steps of:</p>
+          <ul>
+            <li>Create fiber resin mold</li>
+            <li>Opening the fiber resin mold</li>
+            <li>Marking on the mold</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Assembling">
+        <header class="header-section">Assembling</header>
+        <article>
+          <p>Moving on to assembling process. 8mm iron rod is used to create a illusion of light in a linear straight line form.</p>
+          <p>Each rod was weld in the centerward of the figure. After all rods was welt, finished by applying anti rust solution to the statue to decrease <code>corrosion</code> process. </p>
+          <ul>
+            <li>Welding process</li>
+            <li>Attaching to base</li>
+            <li>Finishing</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Exhibition">
+        <header class="header-section">Exhibition</header>
+        <article>
+          <p>The sculpture was exhibited in a campus gallery for two weeks on <code>Summer 2014</code>.</p>
+          <p>The exhibition received exquisite response by the audience, most of them are students, lecturers and faculty members. There are few memorable mentions and critiques regarding the artwork, such as: </p>
+          <ul>
+            <li>Visually striking and appealing</li>
+            <li>The depth of concept and creativity</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+```
+
+## STYLES.CSS
+
+```
+html, body {
+  min-width: 290px;
+color: #4d4e53;
+background-color: #ffffff;
+font-family: 'Open Sans', sans-serif;
+line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+min-width: 290px;
+top: 0px;
+left: 0px;
+width: 300px;
+height: 100%;
+border-right: solid;
+border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar a {
+  display: block;
+padding: 10px 30px;
+color: #4d4e53;
+text-decoration: none;
+cursor: pointer;
+}
+
+header {
+  color: black;
+margin: 8px;
+text-align: center;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+p {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+#main-doc header {
+  text-align: left;
+margin: 0px;
+}
+
+#main-doc {
+  position: absolute;
+margin-left: 310px;
+padding: 20px;
+margin-bottom: 110px;
+}
+.media {
+  width: 200px;
+  position: relative;
+  top: 0;
+  left: 50px;
+}
+
+@media (max-width: 200px){
+  
+}
