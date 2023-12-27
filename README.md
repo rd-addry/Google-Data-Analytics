@@ -1,31 +1,12 @@
-# Plans and Milestones
+This repo will be focusing on my progress learning from freecodecamp.org.
 
-## Data Analytics
-- SQL
-- PostgresSQL
-- R
-- Python
-- NumPy
-  
-## Data Science
-- Python
-- Statistics
+# 1. Responsive Web Design Cert
+[https://www.freecodecamp.org/certification/rd_addry/responsive-web-design]
 
-## Web Design
-- HTML
-- CSS
+# 2. JavaScript Algorithms and Data Structures
+[https://www.freecodecamp.org/certification/rd_addry/javascript-algorithms-and-data-structures]
 
-## Data Visualization
-- D3
-- Tableu
-- Power BI
+# 3. Front End Development Libraries
+[https://www.freecodecamp.org/certification/rd_addry/front-end-development-libraries]
 
-## Output
-- Website (try with GitHub Pages)
-- Capstone Project (showcased on website)
-
-
-## Coursera
-- **Google Data Analytics Professional Certificate**
-- **Google Advanced Data Analytics Professional Certificate**
-- **IBM Data Science Professional Certificate**
+# 4. Data Visualization
